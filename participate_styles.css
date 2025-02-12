@@ -1,0 +1,172 @@
+/* Styles for class .participate_section1 */
+.participate_section1 {
+    position: absolute; /* Position the element absolutely */
+    height: 70vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 7vw; /* Adjust the vaule to move down */
+}
+
+/* Target h1 elements in class .participate_section1 */
+.participate_section1 h1 {
+    font-size: 3vw; /* Adjust the font size */
+    top: 12vw; /* Adjust the vaule to move down */
+    left: 50vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+  
+/* Target paragraphs elements in class .participate_section1 */
+.participate_section1 p {
+    font-size: 1.7vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 90vw; /* Adjust the width of the element */
+    text-align: center; /* Align the text to the center */
+    top: 20vw; /* Adjust the vaule to move down */
+    left: 50vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for class .participate_form_part1 */
+.participate_section1 .participate_form_part1 {
+    position: absolute; /* Position the element absolutely */
+    height: 27vw; /* Adjust the height of the element */
+    width: 72vw; /* Adjust the width of the element */
+    margin-top: 23vw; /* Adjust the vaule to move down */
+    margin-left: 14vw; /* Adjust the vaule to right */
+}
+
+/* Target h1 elements in class .volunteer_text, .fundraise_text and not_sure_text */
+.volunteer_text h1,
+.fundraise_text h1,
+.not_sure_text h1 {
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 39vw; /* Adjust the width of the element */
+    top: 7.5vw; /* Adjust the vaule to move down */
+    left: 20vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class .volunteer_text, .fundraise_text and not_sure_text */
+.volunteer_text p,
+.fundraise_text p,
+.not_sure_text p {
+    font-size: 1.3vw; /* Adjust the font size */
+    width: 35vw; /* Adjust the width of the element */
+    text-align: left; /* Align the text to the center */
+    top: 12vw; /* Adjust the vaule to move down */
+    left: 18.5vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for class .participation_choice */
+.participation_choice {
+    position: absolute; /* Position the element absolutely */
+    display: flex;
+    margin-top: 3.5vw; /* Adjust the vaule to move down */
+    margin-left: 3vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the buttons inside class .participation_choice */
+.participation_choice .button {
+    width: 20vw; /* Adjust the width of the button */
+    margin-right: 3vw; /* Add space to the right of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+}
+
+.participate_form_part1 .next_button {
+    margin-top: 21vw; /* Adjust the vaule to move down */
+    margin-left: 31.5vw; /* Adjust the vaule to right */
+    width: 9vw; /* Adjust the width of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+    border: 0.3vw solid #e45656;
+}
+
+.participate_form_part1 .next_button:hover {
+    background-color: #e45656;
+    border: 0.3vw solid #fafafa;
+}
+
+/* Styles for class .participate_form_part2 */
+.participate_section1 .participate_form_part2 {
+    position: absolute; /* Position the element absolutely */
+    height: 35vw; /* Adjust the height of the element */
+    width: 50vw; /* Adjust the width of the element */
+    margin-top: 43vw; /* Adjust the vaule to move down */
+    margin-left: 25vw; /* Adjust the vaule to right */
+}
+
+/* Add this CSS to style the success message */
+#successMessage {
+    position: absolute; /* Position the element absolutely */
+    height: 5vw; /* Adjust the height of the element */
+    width: 60vw; /* Adjust the width of the element */
+    margin-top: 25vw; /* Adjust the vaule to move down */
+    margin-left: 5vw; /* Adjust the vaule to right */
+}
+
+/* change the position of the submit button in participate_form_part2 */
+.participate_form_part2_submit_button {
+    position: absolute; /* Position the element absolutely */
+    margin-top: -4vw; /* Adjust the vaule to move down */
+    margin-left: -18.5vw; /* Adjust the vaule to right */
+}
+
+/* Styles for class .participate_section2 */
+.participate_section2 {
+    position: absolute; /* Position the element absolutely */
+    height: 50vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 57vw; /* Adjust the vaule to move down */
+}
+
+/* Target h1 elements in class .participate_section1 */
+.participate_section2 div h1 {
+    font-size: 3.9vw;
+    width: 97vw; /* Adjust the width of the element */
+    text-align: left; /* Align the text to the center */
+    top: 5vw; /* Adjust the vaule to move down */
+    left: 49vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class .participate_section1 */
+.participate_section2 div p {
+    font-size: 1.7vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 50vw; /* Adjust the width of the element */
+    text-align: left; /* Align the text to the center */
+    top: 20vw; /* Adjust the vaule to move down */
+    left: 26vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the image with class .participate_section2 */
+.participate_section2 img {
+    height: 35vw; /* Adjust the height of the element */
+    width: 35vw; /* Adjust the width of the element */
+    margin-top: 9vw; /* Adjust the vaule to move down */
+    margin-left: 60vw; /* Adjust the vaule to move right */
+    border-radius: 2vw;
+    box-shadow:  -23px 23px 46px #cfcfcf,
+             23px -23px 46px #ffffff;
+}
+
+/* change the position of section3 */
+.participate_section3 {
+    margin-top: 108vw; /* Adjust the vaule to move down */
+}
+
+/* Styles for the image in the block1 and block2 */
+.participate_section3 .block1 img,
+.participate_section3 .block2 img {
+    margin-top: 0.30vw; /* Adjust the value to move down */
+  }
+
+/* change the position of section4 */
+.participate_section4 {
+    margin-top: 145vw; /* Adjust the vaule to move down */
+}
+
+/* change the position of the footer */
+.participate_footer {
+    margin-top: 188vw; /* Adjust the vaule to move down */
+}

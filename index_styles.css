@@ -1,0 +1,1363 @@
+/* Apply global styles to the entire page */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Arial', sans-serif;
+  background-color: #f1faee; /* Set body background to white */
+  display: flex; /* Use flexbox to manage layout */
+  flex-direction: column; /* Adjusting to a column layout */
+  position: relative; /* Position relative for absolute positioning */
+}
+
+
+/* styles for the header */
+h1 {
+  color: #e63946;
+  font-size: 4vw;
+  text-shadow: -1px -1px 0 #fafaff, 1px -1px 0 #fafaff, -1px 1px 0 #fafaff, 1px 1px 0 #fafaff;
+  padding: 15px; /* Add padding inside the header */
+  float: left;
+  display: block; /* Display the <h1> element as an inline block */
+  position: absolute; /* Position the <h1> element relative to the viewport */
+}
+
+/* styles for content within the main section */
+p {
+  color: #f1faee;
+  font-size: 2vw;
+  padding: 10px; /* Add padding inside the header */
+  position: absolute; /* Position the <h1> element relative to the viewport */
+}
+
+
+/* Styles for the logo */
+.logo {
+  position: absolute; /* Position the element absolutely within its containing element */
+  height: 10vw; /* Set the height of the element to 10% of the viewport width */
+  width: 30vw; /* Set the width of the element to 30% of the viewport width */
+  margin-top: 0.5vw; /* Set the top margin of the element to 0.5% of the viewport width */
+}
+
+/* Header Container Styles */
+.header_block1 {
+  color: transparent; /* Background color of the block */
+  height: 11vw; /* Adjust the height of the element */
+  width: 100%; /* Adjust the width of the element */
+  position: absolute; /* Position the element absolute to the viewport */
+  top: 0; /* Adjust the vaule to move down */
+  left: 0; /* Adjust the vaule to move right */
+}
+
+/* Header Menu Container Styles */
+.header_block1 nav ul {
+  list-style-type: none; /* Remove the bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0 auto; /* Center the menu list */
+  text-align: right; /* Right-align the menu items */
+  margin-top: 3vw; /* Adjust the value to move the menu list down */
+  margin-right: 12vw; /* Adjust the value to move the menu list to the right */
+  
+}
+
+.header_block1 nav li {
+  display: inline-block; /* Display menu items horizontally */
+  margin: 0 2vw; /* Add some space between menu items */
+}
+
+.header_block1 nav li a {
+  text-decoration: none; /* Remove underlining */
+  font-size: 2vw; /* Set the font size */
+  color: #f1faee; /* Set the text color */
+}
+
+.header_block1 nav li a:hover {
+  color: #e63946; /* Change text color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for section1 */
+.section1 {
+  position: absolute; /* Position the element absolutely */
+  width: 99vw; /* Adjust the width of the element */
+  height: 42vw; /* Adjust the height of the element */
+  margin-top: 0vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+} 
+
+/* Styles for the background in section1 */
+.section1 > img {
+  position: absolute; /* Position absolutely within the body */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 99vw; /* Take full width */
+  height: 42vw; /* Cover 30% of the viewport height */
+  border-bottom-left-radius: 12px; /* Adjust the border-radius to control of the bottom left corners */
+  border-bottom-right-radius: 12px; /* Adjust the border-radius to control of the bottom right corners */
+}
+
+/* Target h1 elements within elements with class .background */
+.section1 h1 {
+  top: 16.5vw; /* Adjust the vaule to move down */
+}
+
+/* Target paragraphs within elements with class .background */
+.section1 p {
+  top: 22vw; /* Adjust the valie to move it down */
+  left: 0.5vw; /* Adjust the the value to move it right */
+}
+
+/* Positioning for the contribute button */
+.section1_button {
+  position: absolute;
+  margin-top: 29vw;
+  margin-left: 1vw;
+  z-index: 0; /* Set z-index to make sections appear above the overlay */
+}
+
+/* Menu Container Styles */
+.menu__container {
+	position: fixed; /* Position the element relative to the viewport */
+}
+
+/* Menu Toggler Styles */
+.menu__toggler {
+  position: fixed; /* Position the menu toggler */
+  top: 3vw; /* Set the distance from the top */
+  right: 2vw; /* Set the distance from the left */
+  z-index: 999; /* Set the stacking order */
+  height: 2.8vw; /* Set the height of the toggler */
+  width: 8vw; /* Set the width of the toggler */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  align-items: center; /* Align items vertically */
+  border: 2px solid #e63946; /* Set the border properties */
+  background-color: #fafafa; /* Add background color white to the menu toggler */
+  border-radius: 20px; /* Apply border radius for the toggler */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  display: inline-flex; /* Ensure inline flex display */
+  color: #e63946; /* Set the color of the menu button */
+  transition: 300ms cubic-bezier(0.77, 0, 0.175, 1); /* Add transition effect */
+}
+
+/* Styles for the menu toggler icon and its pseudo-elements */
+.menu__toggler > span,
+.menu__toggler > span::before,
+.menu__toggler > span::after {
+  position: absolute; /* Position the elements absolutely */
+  content: ''; /* Add content to the elements */
+  width: 2vw; /* Set width */
+  height: 0.2vw; /* Set height */
+  background: #e63946; /* Set background color */
+  border-radius: 5px; /* Apply border radius */
+  top: 40vw; /* Position vertically */
+  transition: 500ms cubic-bezier(0.77, 0, 0.175, 1); /* Add transition effect */
+}
+
+.menu__toggler.active {
+  top: 2%; /* Set the distance from the top when the menu is active */
+}
+
+/* Styles for the menu toggler icon */
+.menu__toggler > span {
+  top: 45%; /* Position vertically */
+  right: 7%; /* Position horizontally */
+}
+
+.menu__toggler > span::before {
+  top: -0.59vw; /* Position the before pseudo-element */
+}
+
+.menu__toggler > span::after {
+  top: 0.59vw; /* Position the after pseudo-element */
+}
+
+/* Apply styles when menu toggler is active */
+.menu__toggler.active > span {
+  background: transparent; /* Make the background transparent */
+}
+
+.menu__toggler.active > span::before,
+.menu__toggler.active > span::after {
+  background: #e63946; /* Set background color */
+  top: 0vw; /* Align pseudo-elements vertically */
+}
+
+.menu__toggler.active > span::before {
+  transform: rotate(-225deg); /* Rotate the before pseudo-element */
+}
+
+.menu__toggler.active > span::after {
+  transform: rotate(225deg); /* Rotate the after pseudo-element */
+}
+
+/* Styles for the menu text */
+#menuText {
+  font-weight: bold; /* Set font weight to bold */
+  font-size: 1.5vw; /* Increase font size */
+  margin-left: 0.9vw; /* Adjust margin to move it more to the right */
+  display: inline-block; /* Ensure inline block display for the text */
+}
+
+/* Menu Styles */
+.menu {
+  position: fixed; /* Position the menu */
+  top: 0; /* Align to the top */
+  right: -30%; /* Initially position the menu outside the viewport */
+  z-index: 998; /* Set the z-index to control stacking order */
+  background-color: rgb(255, 255, 255); /* Set background color */
+  padding: 15px; /* Add padding */
+  border-top-left-radius: 15px; /* Apply border radius for the top right corner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth effect */
+  width: 20%; /* Set width of the menu */
+  height: 100%; /* Set height to auto */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Set flex direction to column */
+  transition: 300ms right cubic-bezier(0.77, 0, 0.175, 1), 300ms opacity cubic-bezier(0.77, 0, 0.175, 1); /* Add transition effect */
+}
+
+/* Apply styles when menu is active */
+.menu.active {
+  right: 0; /* Move the menu to the left edge of its parent container */
+  display: flex; /* Display the menu */
+}
+
+/* Side Menu Container Styles */
+.menu ul {
+  list-style-type: none; /* Remove the bullet points */
+  padding: 0px; /* Remove default padding */
+  margin-top: 20%; /* move the menu list down */
+  text-align: center; /* Center align the menu items */
+}
+
+.menu li {
+  display: column; /* Display menu items horizontally */
+  margin: 1.5vw 1vw; /* Add some space between menu items */
+}
+
+.menu li a {
+  text-decoration: none; /* Remove underlining */
+  font-size: 2vw; /* Set the font size */
+  color: #333; /* Set the text color */
+}
+
+.menu li a:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: #e63946; /* Change text color on hover */
+}
+
+/* Reset default styles for all elements */
+*,
+*::before,
+*::after {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Use border-box model for box sizing */
+}
+
+.overlay {
+  position: fixed; /* Position the element relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Adjust z-index to ensure overlay is beneath menu when active */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+  display: none; /* Initially hidden */
+}
+
+.overlay.active {
+  display: block; /* Display overlay when menu is active */
+}
+
+body.overlay-active {
+  overflow-y: hidden; /* Disable vertical scrolling on the body when overlay is active */
+}
+
+body.overlay-active .section1_button {
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Styles for buttons */
+.button {
+  padding: 1vw; /* Add Padding for the buttons */
+  font-size: 1.3vw; /* Size of the text inside the button */
+  text-align: center; /* Align the text to the center inside the button */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  outline: none; /* Remove default focus outline for better visual appearance */
+  color: #fafafa; /* color of the button */
+  background-color: #e45656; /* color of the button's background */
+  border: 0.2vw solid#fafafa; /* Set the border properties */
+  border-radius: 20px; /* Apply border radius for the toggler */
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.button:hover {
+  color: #e45656;
+  border: 0.2vw solid#e45656; /* Set the border properties */
+  background-color: #fafafa /* When button is hovered over the color changes */
+} 
+
+.button:active {
+  background-color: #fafafa; /* Background color of the button when active*/
+  transform: translateY(0.2vw); /* When button is clicked the button box moves down 0.5vw in Y axes */
+}
+
+/* Align the donate button to the right */
+.donate1 {
+  position: absolute;
+  margin-top: -3.2vw;
+  margin-left: 90vw;
+}
+
+/* Styles for section2 */
+.section2 {
+  position: absolute; /* Position the element absolutely */
+  height: 45vw; /* Adjust the height of the element */
+  width: 95vw; /* Adjust the width of the element */
+  margin-top: 43vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Target h1 elements in class .missionStatement */
+.section2 .missionStatement h1 {
+  font-size: 4vw; /* Adjust the font size */
+  margin-top: 0vw; /* Adjust the vaule to move down */
+}
+
+/* Target paragraphs elements in class .missionStatement */
+.section2 .missionStatement p {
+  font-size: 2vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  top: 5.5vw; /* Adjust the valie to move it down */
+  left: 1vw; /* Adjust the the value to move it right */
+}
+
+/* Target h1 elements in class .vision */
+.section2 .vision h1 {
+  font-size: 4vw; /* Adjust the font size */
+  margin-top: 12vw; /* Adjust the vaule to move down */
+}
+
+/* Target paragraphs elements in class .vision */
+.section2 .vision p {
+  font-size: 2vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  top: 17.5vw; /* Adjust the valie to move it down */
+  left: 1vw; /* Adjust the the value to move it right */
+}
+
+/* Styles for section3 */
+.section3 {
+  position: absolute; /* Position the element absolutely */
+  height: 40vw; /* Adjust the height of the element */
+  width: 99vw; /* Adjust the width of the element */
+  margin-top: 74vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Target h1 elements in class class .section3 */
+.section3 h1 {
+  font-size: 3.3vw; /* Adjust the font size */
+  margin-top: 3vw; /* Adjust margin to move it down */
+  width: 55vw; /* Adjust the width of the element */
+  left: 53vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block1 */
+.block1 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 28vw; /* Adjust the height of the element */
+  width: 35vw; /* Adjust the width of the element */
+  top: 8vw; /* Adjust the vaule to move down */
+  left: 10vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block1 */
+.section3 .block1 img {
+  width: 34.36vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.33vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block1 */
+.section3 .block1 h1 {
+  font-size: 1.2vw; /* Adjust the font size */
+  margin-top: 1.8vw; /* Adjust the vaule to move down */
+  width: 33vw; /* Adjust the width of the element */
+  left: 19vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block1 */
+.section3 .block1 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 25vw; /* Adjust the valie to move it down */
+  left: 17vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block2 */
+.block2 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 28vw; /* Adjust the height of the element */
+  width: 35vw; /* Adjust the width of the element */
+  top: 8vw; /* Adjust the vaule to move down */
+  left: 55vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block1 */
+.section3 .block2 img {
+  width: 34.37vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.31vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block1 */
+.section3 .block2 h1 {
+  font-size: 1.3vw; /* Adjust the font size */
+  margin-top: 1.8vw; /* Adjust the vaule to move down */
+  width: 30vw; /* Adjust the width of the element */
+  left: 18vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block1 */
+.section3 .block2 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 25vw; /* Adjust the valie to move it down */
+  left: 17vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for section4 */
+.section4 {
+  position: absolute; /* Position the element absolutely */
+  height: 50vw; /* Adjust the height of the element */
+  width: 95vw; /* Adjust the width of the element */
+  margin-top: 117vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Target h1 elements in class .section4 */
+.section4 h1 {
+  font-size: 3vw; /* Adjust the font size */
+  margin-top: 2vw; /* Adjust the vaule to move down */
+  width: 62vw; /* Adjust the width of the element */
+  left: 50vw;/* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class .section4 */
+.section4 p {
+  font-size: 1.5vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 50vw; /* Adjust the width of the element */
+  top: 8vw; /* Adjust the valie to move it down */
+  left: 50vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block3 */
+.block3 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  height: 27vw; /* Adjust the height of the element */
+  border-radius: 0.5vw;
+  width: 27vw; /* Adjust the width of the element */
+  top: 13vw; /* Adjust the vaule to move down */
+  left: 3vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block3 */
+.section4 .block3 img {
+  width: 26.39vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.30vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block3 */
+.section4 .block3 h1 {
+  font-size: 1.5vw; /* Adjust the font size */
+  margin-top: 1.5vw; /* Adjust the vaule to move down */
+  width: 25vw; /* Adjust the width of the element */
+  left: 13.5vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block3 */
+.section4 .block3 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 24vw; /* Adjust the valie to move it down */
+  left: 13.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block4 */
+.block4 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 27vw; /* Adjust the height of the element */
+  width: 27vw; /* Adjust the width of the element */
+  top: 13vw; /* Adjust the vaule to move down */
+  left: 37vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block4 */
+.section4 .block4 img {
+  width: 26.39vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.31vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block4 */
+.section4 .block4 h1 {
+  font-size: 1.35vw; /* Adjust the font size */
+  margin-top: 1.5vw; /* Adjust the vaule to move down */
+  width: 27vw; /* Adjust the width of the element */
+  left: 14vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block4 */
+.section4 .block4 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 25vw; /* Adjust the width of the element */
+  top: 24vw; /* Adjust the valie to move it down */
+  left: 13.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block5 */
+.block5 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 27vw; /* Adjust the height of the element */
+  width: 27vw; /* Adjust the width of the element */
+  top: 13vw; /* Adjust the vaule to move down */
+  left: 70vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block5 */
+.section4 .block5 img {
+  width: 26.38vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.33vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block5 */
+.section4 .block5 h1 {
+  font-size: 1.5vw; /* Adjust the font size */
+  margin-top: 1.5vw; /* Adjust the vaule to move down */
+  width: 20vw; /* Adjust the width of the element */
+  left: 13.5vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block5 */
+.section4 .block5 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 24vw; /* Adjust the valie to move it down */
+  left: 13.2vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for section5 */
+.section5 {
+  position: absolute; /* Position the element absolutely */
+  height: 37vw; /* Adjust the height of the element */
+  width: 95vw; /* Adjust the width of the element */
+  margin-top: 164vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Target h1 elements within elements with class .section5 */
+.section5 h1 {
+  font-size: 3vw; /* Adjust the font size */
+  margin-top: 1vw; /* Adjust the vaule to move down */
+  width: 50vw; /* Adjust the width of the element */
+  left: 52vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block6 */
+.block6 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 27vw; /* Adjust the height of the element */
+  width: 27vw; /* Adjust the width of the element */
+  top: 6vw; /* Adjust the value to move down */
+  left: 3vw; /* Adjust the value to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block6 */
+.section5 .block6 img {
+  width: 26.37vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.30vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block6 */
+.section5 .block6 h1 {
+  font-size: 1.5vw; /* Adjust the font size */
+  margin-top: 1.5vw; /* Adjust the vaule to move down */
+  width: 27vw; /* Adjust the width of the element */
+  left: 13.5vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block6 */
+.section5 .block6 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 24.5vw; /* Adjust the valie to move it down */
+  left: 13.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block7 */
+.block7 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 27vw; /* Adjust the height of the element */
+  width: 27vw; /* Adjust the width of the element */
+  top: 6vw; /* Adjust the vaule to move down */
+  left: 37vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block7 */
+.section5 .block7 img {
+  width: 26.37vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.31vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block7 */
+.section5 .block7 h1 {
+  font-size: 1.5vw; /* Adjust the font size */
+  margin-top: 1.5vw; /* Adjust the vaule to move down */
+  width: 24vw; /* Adjust the width of the element */
+  left: 13.5vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block7 */
+.section5 .block7 p {
+  font-size: 1.3vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 20vw; /* Adjust the width of the element */
+  top: 24.5vw; /* Adjust the valie to move it down */
+  left: 13.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block8 */
+.block8 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  border-radius: 0.5vw;
+  height: 27vw; /* Adjust the height of the element */
+  width: 27vw; /* Adjust the width of the element */
+  top: 6vw; /* Adjust the vaule to move down */
+  left: 70vw; /* Adjust the vaule to move right */
+  z-index: 0; /* Set z-index to make it appear under the block */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block8 */
+.section5 .block8 img {
+  width: 26.38vw;  /* Adjust the width of the img */
+  height: 19vw;  /* Adjust the height of the img */
+  margin-top: 0.31vw; /* Adjust the value to move down */
+  margin-left: 0.32vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block8 */
+.section5 .block8 h1 {
+  font-size: 1.35vw; /* Adjust the font size */
+  margin-top: 2vw; /* Adjust the vaule to move down */
+  width: 27vw; /* Adjust the width of the element */
+  left: 13.5vw; /* Adjust the vaule to move right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block8 */
+.section5 .block8 p {
+  font-size: 1.2vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 25vw; /* Adjust the width of the element */
+  top: 25vw; /* Adjust the valie to move it down */
+  left: 13.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover,
+.block5:hover,
+.block6:hover,
+.block7:hover,
+.block8:hover {
+  transform: translateY(-10px); /* When hovering over the block it moves up -10px in Y axes */
+  filter: drop-shadow(0 0 1.2vw #e45656);
+  box-shadow: inset 0 0 0 0.4vw #e45656;
+  border-radius: 0.7vw; /* Adjust the value as needed for the roundness */
+  overflow: hidden; /* Ensure the shadow doesn't overflow beyond the rounded corners */
+}
+
+.block1:hover::before,
+.block2:hover::before {
+  content: ' '; /* Required for pseudo-elements */
+  position: absolute; /* Position the element absolutely */
+  height: 50%; /* Adjust the height of the element */
+  width: 180%; /* Adjust the width of the element */
+  top: 7vw; /* Adjust the value to move down */
+  left: -15vw; /* Adjust the value to move right */
+  background-color: #e63946;
+  z-index: -1; /* Set z-index to make it appear under the block */
+  transform: rotate(-45deg);
+  transition: 0.3s; /* Smooth transition for the border */
+  animation: animate 3s linear infinite; /* Adding animation effect */
+}
+
+.block3:hover::before,
+.block4:hover::before,
+.block5:hover::before,
+.block6:hover::before,
+.block7:hover::before,
+.block8:hover::before {
+  content: ' '; /* Required for pseudo-elements */
+  position: absolute; /* Position the element absolutely */
+  height: 50%; /* Adjust the height of the element */
+  width: 180%; /* Adjust the width of the element */
+  top: 7vw; /* Adjust the value to move down */
+  left: -7vw; /* Adjust the value to move right */
+  background-color: #e63946;
+  z-index: -1; /* Set z-index to make it appear under the block */
+  transform: rotate(-45deg);
+  transition: 0.3s; /* Smooth transition for the border */
+  animation: animate 3s linear infinite; /* Adding animation effect */
+}
+
+.block1:hover::after,
+.block2:hover::after,
+.block3:hover::after,
+.block4:hover::after,
+.block5:hover::after,
+.block6:hover::after,
+.block7:hover::after,
+.block8:hover::after {
+  content: ' '; /* Required for pseudo-elements */
+  position: absolute; /* Position the element absolutely */
+  inset: 0.3vw;
+  background: #fafafa;
+  border-radius: 0.5vw;
+  z-index: -1; /* Set z-index to make it appear under the block */
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles for section6 */
+.section6 {
+  position: absolute; /* Position the element absolutely */
+  height: 50vw; /* Adjust the height of the element */
+  width: 100%; /* Adjust the width of the element */
+  margin-top: 200vw; /* Adjust the vaule to move down */
+  z-index: -1; /* Set z-index to make sections appear under the overlay */
+}
+
+/* Target h1 elements in class .section6 */
+.section6 h1 {
+  font-size: 4vw; /* Adjust the font size */
+  margin-top: 10vw; /* Adjust the vaule to move down */
+  width: 40vw; /* Adjust the width of the element */
+  left: 27vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class .section6 */
+.section6 p {
+  font-size: 2vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 45vw; /* Adjust the width of the element */
+  top: 20vw; /* Adjust the valie to move it down */
+  text-align:center; /* Align the text to the center */
+  left: 24.5vw; /* Places it halfway across from the left */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the HFG open letter icon */
+.HFG_open_letter {
+  height: 10vw; /* Adjust the height of the element */
+  width: 15vw; /* Adjust the width of the element */
+  margin-top: 28vw; /* Adjust the value to move it down */
+  margin-left: 17.5vw; /* Adjust the value to move it to the right */
+}
+
+/* Styles for the mailing list form */
+.emailList_formBlock { 
+  width: 20vw; /* Adjust the width of the element */
+  height: auto; /* Adjust the height of the element */
+  position: absolute; /* Position the element absolute to the viewport */
+  top: 21.9vw; /* Adjust the vaule to move down */
+  left: 80vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -45%); /* Move the element up by 50% of its own height and left by 50% of its own width, effectively centering it */
+}
+
+/* Target h1 elements within elements with class .mailList_formBlock */
+.emailList_formBlock h1 {
+  font-size: 3.5vw; /* Adjust the font size */
+  width: 20vw;
+  margin-top: -1vw; /* Adjust the vaule to move down */
+  left: 9vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Apply padding and bold font weight to all labels */
+label {
+  padding: 0.5vw;
+  font-size: 1vw; /* Adjust the font size */
+  font-weight: bold;
+}
+/* Apply padding, border-radius, and box-sizing to input element */
+input {
+  padding: 0.5vw;
+  border-radius: 1vw;
+  display: block; /* Ensure they are displayed as block elements */
+}
+
+/* Styles for elements with class "mailList_masterClass" */
+.mailList_masterClass {
+  display: flex; /* Make flex container with flex direction set to row */
+  justify-content: space-between; /* Space evenly between items along the main axis */
+  margin-top: 1.5vw; /* Add margin to the top */
+  padding: 1vw; /* Apply padding to the container */
+}
+
+/* Styles for button inside the mailing list form" */
+.emailList_formBlock .button {
+  margin-top: 1.5vw; /* Add margin to the top */
+  margin-left: 1vw; /* Add margin to the left */
+}
+
+/* styles for the footer */
+footer {
+	background-color: #e63946; /* Hexadecimal color code for light green */
+	color: #fafafa; /* Chnage the color to white */
+	font-size: 1vw; /* Adjust the font size */
+	width: 100%; /* Make the footer span the full width of the viewport */
+  height: 18vw; /* Adjust the height of the footer */
+  padding: 8vw; /* Adds automatic padding to the footer */
+  position: absolute; /* Position the footer absolute to the viewport */
+	margin-top: 245vw; /* Push footer to the bottom */
+  z-index: -1; /* Set z-index to make sections appear under the header */
+}
+
+/* styles for the footer span element */
+footer span {
+	position: absolute; /* Position the footer absolute to the viewport */
+  font-size: 1vw; /* Adjust the font size */
+  font-weight: bold;
+  text-align: center; /* Align the text to the center */
+  margin-top: 5.7vw; /* Adjust margin to move it down */
+  left: 50vw; /* Places it halfway across from the left */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* styles for the footer paragraph element */
+footer p {
+	position: absolute; /* Position the footer absolute to the viewport */
+  font-size: 1vw; /* Adjust the font size */
+  text-align: center; /* Align the text to the center */
+  width: 55vw; /* Adjust the width of the of the paragraph element */
+  margin-top: 6.5vw; /* Adjust margin to move it down */
+  left: 50vw; /* Places it halfway across from the left */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* styles for the footer logo image */
+footer img {
+	position: absolute; /* Position the footer absolute to the viewport */
+  height: 5vw; /* Adjust the height of the logo image */
+  width: 5vw; /* Adjust the width of the logo image */
+  top: 5vw; /* Adjust margin to move it down */
+  left: 15vw; /* Places it halfway across from the left */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the second donate button in the footer */
+footer .donate2 {
+  position: absolute; /* Position the footer absolute to the viewport */
+  color: #e45656;
+  background-color: #fafafa; /* When button is hovered over the color changes to white*/
+  text-align: right center; /* Align the text inside the button to the right and center*/
+  padding-left: 3.5vw; /* Add left padding */
+  font-size: 1.4vw; /* Adjust font size */
+  width: 10vw; /* Adjust the width of the button */
+  top: 3vw; /* Adjust margin to move it down */
+  left: 91.6vw; /* Places it halfway across from the left */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+  background-image: url('pictures/heart.png'); /* Set the path to your icon */
+  background-repeat: no-repeat; /* Ensure the icon is not repeated */
+  background-size: 2.3vw; /* Set the size of the background image */
+  background-position: 0.4vw center; /* position the background image horizontally */
+}
+
+/* Styles for the contact us button in the footer */
+footer .contact_us {
+    position: absolute; /* Position the footer absolute to the viewport */
+    color: #e45656; /* Set the color to bright red */
+    background-color: #fafafa; /* When button is hovered over the color changes to white*/
+    text-align: right; /* Align the text inside the button to the right */
+    padding-left: 3.5vw; /* Add left padding */
+    font-size: 1.3vw; /* Adjust font size */
+    width: 12.5vw; /* Adjust the width of the button */
+    top: 8.5vw; /* Adjust margin to move it down */
+    left: 90.4vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+    background-image: url('pictures/mail.png'); /* Set the path to your icon */
+    background-repeat: no-repeat; /* Ensure the icon is not repeated */
+    background-size: 2.3vw; /* Set the size of the background image */
+    background-position: 0.4vw center; /* Center the background image horizontally */
+}
+
+/* styles for the donate and contact us buttons when hovered over in the footer */
+footer .donate2:hover, footer .contact_us:hover {
+  color: #fafafa; /* Set the color to white */
+  background-color: #ee6060; /* When button is hovered over the color changes to white*/
+  border: solid #fafafa; /* Add a white border around the button */
+}
+
+/* styles for the donate and contact us buttons when is active in the footer */
+footer .donate2:active, footer .contact_us:active {
+  background-color: #e45656; /* Background color of the button when active*/
+  transform: translate(-50%, -50%) translateY(0.2vw); /* Move vertically when active */
+}
+
+.bold {
+  font-weight: bold; /*  Make the text bold */
+}
+
+.hidden {
+  display: none; /* Set the display property to "none" */
+}
+
+/* Media query for responsiveness on smaller screens */
+@media screen and (max-width: 678px) {
+
+  .header_block1 nav li {
+    margin: 0 2vw; /* Add some space between menu items */
+  }
+
+  .section1_button {
+    margin-top: 32vw;
+    margin-left: 3vw;
+  }
+
+  .donate1 {
+    width: 8vw;
+    margin-top: -4vw;
+    margin-left: 88vw;
+  }
+
+  /* Menu Toggler Styles */
+  .menu__toggler {
+    top: 3vw; /* Set the distance from the top */
+    right: 5vw; /* Set the distance from the left */
+    height: 5vw; /* Set the height of the toggler */
+    width: 12vw; /* Set the width of the toggler */
+  }
+
+  /* Styles for the menu text */
+  #menuText {
+    font-size: 2.5vw; /* Increase font size */
+    margin-left: 0.9vw; /* Adjust margin to move it more to the right */
+
+  }
+
+  /* Menu Styles */
+  .menu {
+    width: 30%; /* Set width of the menu */
+  }
+
+  /* Side Menu Container Styles */
+  .menu ul {
+    margin-top: 35%; /* move the menu list down */
+  }
+  .menu li {
+    margin: 3vw 2vw; /* Add some space between menu items */
+  }
+  
+  .menu li a {
+    font-size: 4vw; /* Set the font size */
+  }
+
+  .menu input {
+    height: 6vw;
+    font-size: 3vw;
+    margin-left: -1vw;
+  }
+
+  /* section styles */
+  .section1{
+    width: 100vw; /* Decrease width for smaller screens */
+  }
+
+  .section1 img{
+    width: 100vw; /* Decrease width for smaller screens */
+  }
+
+  .section1 h1 {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  .section1 p {
+    margin-top: 2vw;
+    font-size: 0.5rem; /* Decrease font size for smaller screens */
+  }
+
+  /* Section 2 styles */
+  .section2 {
+    width: 95vw; /* Decrease width for smaller screens */
+    height: 12vw; /* Decrease height for smaller screens */
+  }
+
+  .section2 h1 {
+    width: 99vw;
+    font-size: 1vw; /* Decrease font size for smaller screens */
+  }
+
+  .section2 p {
+    margin-top: 1vw;
+    font-size: 1vw; /* Decrease font size for smaller screens */
+  }
+
+  /* Section 3 styles */
+  .section3 {
+    width: 90vw; /* Decrease width for smaller screens */
+    margin-top: 80vw;
+  }
+
+  .section3 h1 {
+    width: 70vw;
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  .section3 .block1,
+  .section3 .block2 {
+    height: 30vw;
+  }
+
+  .section3 .block1 h1{
+    text-align: center;
+    margin-top: 1.3vw;
+    width: 32vw;
+    margin-left: -1vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section3 .block2 h1 {
+    text-align: center;
+    margin-top: 1.3vw;
+    width: 30vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section3 .block1 p,
+  .section3 .block2 p {
+    margin-top: 1.7vw;
+    width: 30vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  /* Section 4 styles */
+  .section4 {
+    width: 90vw; /* Decrease width for smaller screens */
+    margin-top: 128vw;
+  }
+
+  .section4 h1 {
+    width: 90vw;
+    margin-left: 1vw;
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  .section4 p {
+    font-size: 0.5rem; /* Decrease font size for smaller screens */
+    width: 70vw;
+  }
+
+  .section4 .block3,
+  .section4 .block4,
+  .section4 .block5 {
+    height: 30vw;
+  }
+
+  .section4 .block3 h1{
+    text-align: center;
+    margin-top: 1.3vw;
+    width: 28vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section4 .block4 h1{
+    text-align: center;
+    margin-top: 1.3vw;
+    width: 28vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section4 .block5 h1{
+    text-align: center;
+    margin-top: 1.3vw;
+    width: 25vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section4 .block3 p,
+  .section4 .block4 p,
+  .section4 .block5 p {
+    margin-top: 1.7vw;
+    width: 30vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  /* Section 5 styles */
+  .section5 {
+    width: 80vw; /* Decrease width for smaller screens */
+    margin-top: 182vw;
+  }
+
+  .section5 h1 {
+    width: 70vw;
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  .section5 .block6,
+  .section5 .block7,
+  .section5 .block8 {
+    height: 30vw;
+  }
+
+  .section5 .block6 h1{
+    text-align: center;
+    margin-top: 1.8vw;
+    margin-left: 0vw;
+    width: 28vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section5 .block7 h1{
+    text-align: center;
+    margin-top: 1.8vw;
+    margin-left: 0vw;
+    width: 28vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section5 .block8 h1{
+    text-align: center;
+    margin-top: 1.8vw;
+    margin-left: -1vw;
+    width: 32vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section5 .block6 p,
+  .section5 .block7 p,
+  .section5 .block8 p {
+    margin-top: 2.2vw;
+    width: 30vw;
+    font-size: 1.8vw; /* Decrease font size for smaller screens */
+  }
+
+  .section6 {
+    width: 90vw; /* Decrease width for smaller screens */
+    margin-top: 230vw;
+  }
+
+  .section6 h1{
+    width: 60vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
+  }
+
+  .section6 p {
+    font-size: 0.7rem; /* Decrease font size for smaller screens */
+    margin-top: -3vw;
+    width: 70vw;
+  }
+
+  /* Styles for the HFG open letter icon */
+  .HFG_open_letter {
+    height: 15vw; /* Adjust the height of the element */
+    width: 20vw; /* Adjust the width of the element */
+    margin-top: 30vw; /* Adjust the value to move it down */
+    margin-left: 15vw; /* Adjust the value to move it to the right */
+  }
+
+  /* Target h1 elements within elements with class .mailList_formBlock */
+  .emailList_formBlock h1 {
+    width: 35vw;
+    margin-top: -2vw;
+    margin-left: 0vw;
+    font-size: 5vw; /* Adjust the font size */
+  }
+
+    /* Apply padding and bold font weight to all labels */
+  label {
+    padding: 0.5vw;
+    margin-left: -5vw;
+    font-size: 2.5vw; /* Adjust the font size */
+  }
+  /* Apply padding, border-radius, and box-sizing to input element */
+  input {
+    padding: 0.2vw;
+    width: 25vw;
+    margin-left: -5vw;
+  }
+
+  /* Styles for button inside the mailing list form" */
+  .emailList_formBlock .button {
+    margin-top: 2.5vw; /* Add margin to the top */
+    margin-left: -4vw; /* Add margin to the left */
+    height: 6vw;
+    width: 12vw;
+    font-size: 2vw;
+  }
+
+  footer {
+    width: 100vw; /* Decrease width for smaller screens */
+    height: 28vw;
+    margin-top: 285vw;
+  }
+
+  /* Styles for the second donate button in the footer */
+  footer .donate2 {
+    padding-left: 2vw; /* Add left padding */
+    text-align: right;
+    font-size: 2vw; /* Adjust font size */
+    width: 12vw; /* Adjust the width of the button */
+    top: 4vw; /* Adjust margin to move it down */
+    left: 91.6vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+    background-size: 2.3vw; /* Set the size of the background image */
+    background-position: 0.4vw center; /* position the background image horizontally */
+  }
+
+  /* Styles for the contact us button in the footer */
+  footer .contact_us {
+      padding-left: 2vw; /* Add left padding */
+      text-align: right;
+      font-size: 2vw; /* Adjust font size */
+      width: 16vw; /* Adjust the width of the button */
+      top: 10vw; /* Adjust margin to move it down */
+      left: 89.5vw; /* Places it halfway across from the left */
+      background-size: 2.3vw; /* Set the size of the background image */
+      background-position: 0.4vw center; /* Center the background image horizontally */
+  }
+
+  /* styles for the footer span element */
+  footer span {
+    font-size: 2vw; /* Adjust the font size */
+    margin-top: 9.7vw; /* Adjust margin to move it down */
+    left: 50vw; /* Places it halfway across from the left */
+  }
+
+  /* styles for the footer paragraph element */
+  footer p {
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 55vw; /* Adjust the width of the of the paragraph element */
+    margin-top: 13vw; /* Adjust margin to move it down */
+    left: 50vw; /* Places it halfway across from the left */
+  }
+}

@@ -1,0 +1,428 @@
+/* Header Container Styles */
+.header_block2 {
+    background-color: #e63946; /* Background color of the block */
+    height: 7vw; /* Adjust the height of the element */
+    width: 100%; /* Adjust the width of the element */
+    position: absolute; /* Position the element absolute to the viewport */
+    top: 0; /* Position the top edge of at the absolute top */
+    left: 0; /* Position the top edge of at the absolute left */
+    z-index: 1; /* Set z-index to make the header appear above all the elements */
+}
+
+/* Header Menu Container Styles */
+.header_block2 nav ul {
+    list-style-type: none; /* Remove the bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the menu list */
+    text-align: right; /* Right-align the menu items */
+    margin-top: 1.7vw; /* Adjust the value to move the menu list down */
+    margin-right: 11vw; /* Adjust the value to move the menu list to the right */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+}
+
+.header_block2 nav li {
+    display: inline-block; /* Display menu items horizontally */
+    margin: 0 1.5vw; /* Add some space between menu items */
+    padding-top: 1vw; /* Add top padding to create space */
+    padding-bottom: 1vw; /* Add bottom padding to create space */
+}
+
+/* Styles for the list elements */
+.header_block2 nav li a {
+    text-decoration: none; /* Remove underlining */
+    font-size: 1.5vw; /* Set the font size */
+    color: #f1faee; /* Set the text color */
+    -webkit-font-smoothing: antialiased; /* For Webkit-based browsers */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+}
+
+/* Styles for the list elements when hovered over*/
+.header_block2 nav li a:hover {
+    color: #3d3a3a; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for the donate button in header1 */
+.donate1 {
+    position: absolute;
+    margin-top: -4vw;
+    margin-left: 90vw;
+    outline: none; /* Remove default focus outline for better visual appearance */
+    color: #fafafa; /* color of the button */
+    background-color: #e45656; /* color of the button's background */
+    border: 0.2vw solid#fafafa; /* Set the border properties */
+}
+
+/* Styles for the donate button when hovered over in header1 */
+.donate1:hover {
+    border: solid #e45656; /* Add a lighr red border around the button when hovered over */
+}
+
+/* Styles for the logo */
+.logo1 {
+    position: absolute; /* Position the element absolutely within its containing element */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    height: 7vw; /* Set the height of the element to 7% of the viewport width */
+    width: 22vw; /* Set the width of the element to 22% of the viewport width */
+    margin-top: 0vw; /* Set the top margin of the element to 0% of the viewport width */
+}
+
+/* Header Container Styles */
+.header_block3 {
+    background-color: #fafafa; /* Background color of the block */
+    height: 5vw; /* Adjust the height of the element */
+    width: 100%; /* Adjust the width of the element */
+    position: fixed; /* Position the element absolute to the viewport */
+    top: 0;; /* Position the top edge of at the absolute top */
+    left: 0; ; /* Position the top edge of at the absolute left */
+    border-bottom: 0.3vw solid #e45656; /* Add a light red border around the block */
+    z-index: 1; /* Set z-index to make the header appear above all the elements */
+}
+
+/* Header Menu Container Styles */
+.header_block3 nav ul {
+    list-style-type: none; /* Remove the bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the menu list */
+    text-align: right; /* Right-align the menu items */
+    margin-top: 0.5vw; /* Adjust the value to move the menu list down */
+    margin-right: 12vw; /* Adjust the value to move the menu list to the right */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+}
+
+.header_block3 nav li {
+    display: inline-block; /* Display menu items horizontally */
+    margin: 0 1.5vw; /* Add some space between menu items */
+    padding-top: 1vw; /* Add top padding to create space */
+    padding-bottom: 1vw; /* Add bottom padding to create space */
+  }
+
+/* Styles for the list elements */
+.header_block3 nav li a {
+    text-decoration: none; /* Remove underlining */
+    font-size: 1.5vw; /* Set the font size */
+    color: #3d3a3a; /* Set the text color */
+    -webkit-font-smoothing: antialiased; /* For Webkit-based browsers */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+}
+
+/* Styles for the list elements when hovered over*/
+.header_block3 nav li a:hover {
+    color: #e45656; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Align the donate button to the right */
+.donate3 {
+    position: absolute;
+    top: 0.5vw; /* Align the button in the middle of the container */
+    right: 2vw; /* Align the button to the right side of the container */
+    outline: none; /* Remove default focus outline for better visual appearance */
+    color: #fafafa; /* color of the button */
+    background-color: #e45656; /* color of the button's background */
+    border: 0.2vw solid#fafafa; /* Set the border properties */
+  }
+
+  /* Styles for the donate button when hovered over in header2 */
+.donate3:hover {
+    border: solid #e45656; /* Add a lighr red border around the button when hovered over */
+}
+
+/* Styles for the logo */
+.logo2 {
+    position: absolute; /* Position the element absolutely within its containing element */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    height: 4vw; /* Set the height of the element to 4.5% of the viewport width */
+    width: 4.8vw; /* Set the width of the element to 5% of the viewport width */
+    margin-top: 0.2vw; /* Set the top margin of the element to 0% of the viewport width */
+    margin-left: 0.5vw; /* Set the top margin of the element to 0.5% of the viewport width */
+}
+
+/* Styles for submenu1 */
+.submenu1 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu1 */
+    width: 22vw;
+    padding: 1vw; /* Add some padding to submenu1 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu1 position */
+.header_block2 nav li:hover .submenu1,
+.header_block2 nav .submenu1:hover {
+    top: 3.5vw; /* Position the submenu1 below the parent */
+    left: 52vw; /* Align submenu1 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for submenu2 */
+.submenu2 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu2 */
+    width: 12vw;
+    padding: 1vw; /* Add some padding to submenu2 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu2 position */
+.header_block2 nav li:hover .submenu2,
+.header_block2 nav .submenu2:hover {
+    top: 3.5vw; /* Position the submenu2 below the parent */
+    left: 67.9vw; /* Align submenu2 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for submenu3 */
+.submenu3 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu3 */
+    width: 11vw;
+    padding: 1vw; /* Add some padding to submenu3 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu3 position */
+.header_block2 nav li:hover .submenu3,
+.header_block2 nav .submenu3:hover {
+    top: 3.5vw; /* Position the submenu3 below the parent */
+    left: 78vw; /* Align submenu3 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for submenu4 */
+.submenu4 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu4 */
+    width: 22vw;
+    padding: 1vw; /* Add some padding to submenu4 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu4 position */
+.header_block3 nav li:hover .submenu4,
+.header_block3 nav .submenu4:hover {
+    top: 3.5vw; /* Position the submenu4 below the parent */
+    left: 52vw; /* Align submenu4 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for submenu5 */
+.submenu5 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu5 */
+    width: 12vw;
+    padding: 1vw; /* Add some padding to submenu5 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu5 position */
+.header_block3 nav li:hover .submenu5,
+.header_block3 nav .submenu5:hover {
+    top: 3.5vw; /* Position the submenu5 below the parent */
+    left: 66.8vw; /* Align submenu5 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for the submenu5 items */
+.header_block3 nav .submenu5 li a {
+    color: #3d3a3a; /* Set the default text color of submenu5 items */
+}
+
+/* Change the text color of submenu5 items when hovered over */
+.header_block3 nav .submenu5 li a:hover {
+    color: #e63946 ; /* Change text color on hover */
+}
+
+/* Styles for submenu6 */
+.submenu6 {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of submenu6 */
+    width: 11vw;
+    padding: 1vw; /* Add some padding to submenu6 */
+    border-top: 1vw solid #e45656;
+    border-bottom-left-radius: 1vw; /* Adjust the border-radius to control of the bottom left corners */
+    border-bottom-right-radius: 1vw; /* Adjust the border-radius to control of the bottom right corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better visual */
+}
+
+/* Adjust submenu6 position */
+.header_block3 nav li:hover .submenu6,
+.header_block3 nav .submenu6:hover {
+    top: 3.5vw; /* Position the submenu6 below the parent */
+    left: 77vw; /* Align submenu6 with the left edge of the parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Show submenu6 when hovering over parent li or the submenu */
+.header_block2 nav li:hover .submenu1,
+.header_block2 nav .submenu1:hover,
+.header_block2 nav li:hover .submenu2,
+.header_block2 nav .submenu2:hover,
+.header_block2 nav li:hover .submenu3,
+.header_block2 nav .submenu3:hover,
+.header_block3 nav li:hover .submenu4,
+.header_block3 nav .submenu4:hover,
+.header_block3 nav li:hover .submenu5,
+.header_block3 nav .submenu5:hover,
+.header_block3 nav li:hover .submenu6,
+.header_block3 nav .submenu6:hover {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
+    text-align: center;
+}
+
+/* Styles for the submenu items */
+.header_block2 nav .submenu1 li a,
+.header_block2 nav .submenu2 li a,
+.header_block2 nav .submenu3 li a,
+.header_block2 nav .submenu4 li a,
+.header_block2 nav .submenu5 li a,
+.header_block2 nav .submenu6 li a {
+    color: #3d3a3a; /* Set the default text color of submenu1 items */
+}
+
+/* Change the text color of the submenu items when hovered over */
+.header_block2 nav .submenu1 li a:hover,
+.header_block2 nav .submenu2 li a:hover,
+.header_block2 nav .submenu3 li a:hover,
+.header_block2 nav .submenu4 li a:hover,
+.header_block2 nav .submenu5 li a:hover,
+.header_block2 nav .submenu6 li a:hover {
+    color: #e63946 ; /* Change text color on hover */
+}
+
+/* Styles for class .our_work_section1 */
+.our_work_section1 {
+    position: absolute; /* Position the element absolutely */
+    height: 35vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 7vw; /* Adjust the vaule to move down */
+}
+  
+/* Target h1 elements within elements with class .our_work_section1 */
+.our_work_section1 h1 {
+    font-size: 3.5vw; /* Adjust the font size */
+    margin-top: 2vw; /* Adjust the vaule to move down */
+    margin-left: 1.4vw; /* Adjust the vaule to right */
+}
+  
+/* Target paragraphs within elements with class .our_work_section1 */
+.our_work_section1 p {
+    font-size: 1.4vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 65vw; /* Adjust the width of the element */
+    margin-top: 7.5vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* styles for pie chart image */
+.our_work_section1 img {
+    position: absolute; /* Position the footer absolute to the viewport */
+    height: 25vw; /* Adjust the height of the logo image */
+    width: 25vw; /* Adjust the width of the logo image */
+    top: 17vw; /* Adjust margin to move it down */
+    left: 82vw; /* Places it halfway across from the left */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* styles for the the list in section1 */
+.our_work_section1 ul {
+    position: absolute; /* Position the footer absolute to the viewport */
+    font-size: 1.5vw; /* Adjust the font size */
+    list-style: none;  /* Remove the default list styles */
+    top: 21vw; /* Adjust margin to move it down */
+    left: 49vw; /* Places it halfway across from the left */
+}
+
+.our_work_section1 li {
+    position: relative;
+    padding-left: 1.5vw; /* Adjust padding to make space for the pseudo-element */
+    margin-bottom: 1vw; /* Adjust margin as needed */
+}
+
+.our_work_section1 li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.7vw; /* Adjust the width of the square */
+    height: 0.7vw; /* Adjust the height of the square */
+    background-color: #ccc; /* Default color */
+    border-radius: 0.15vw; /* Make the corners slightly rounded */
+}
+
+.our_work_section1 li:nth-child(1)::before {
+    background-color: #ff3131; /* First square color */
+}
+
+.our_work_section1 li:nth-child(2)::before {
+    background-color: #ffbd59; /* Second square color */
+}
+
+.our_work_section1 li:nth-child(3)::before {
+    background-color: #ff914d; /* Third square color */
+}
+
+/* change the position of section2 */
+.our_work_section2 {
+    margin-top: 35vw; /* Adjust the vaule to move down */
+}
+
+/* Styles for the image in the block3 */
+.our_work_section2 .block3 img {
+    width: 26.39vw;  /* Adjust the width of the img */
+    height: 19vw;  /* Adjust the height of the img */
+    margin-top: 0.30vw; /* Adjust the value to move down */
+    margin-left: 0.30vw; /* Adjust the value to move right */
+    border-radius: 0.5vw;
+}
+
+/* Styles for the image in the block4 */
+.our_work_section2 .block4 img {
+    width: 26.39vw;  /* Adjust the width of the img */
+    height: 19vw;  /* Adjust the height of the img */
+    margin-top: 0.30vw; /* Adjust the value to move down */
+    margin-left: 0.31vw; /* Adjust the value to move right */
+    border-radius: 0.5vw;
+}
+
+/* Styles for the image in the block5 */
+.our_work_section2 .block5 img {
+    width: 26.39vw;  /* Adjust the width of the img */
+    height: 19vw;  /* Adjust the height of the img */
+    margin-top: 0.30vw; /* Adjust the value to move down */
+    margin-left: 0.31vw; /* Adjust the value to move right */
+    border-radius: 0.5vw;
+}
+
+/* change the position of section3 */
+.our_work_section3 {
+    margin-top: 75vw; /* Adjust the vaule to move down */
+}
+
+/* change the position of the footer */
+.our_work_footer {
+    margin-top: 118vw; /* Adjust the vaule to move down */
+}

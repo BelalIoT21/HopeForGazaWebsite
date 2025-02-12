@@ -1,0 +1,150 @@
+/* Styles for class challenge1_section1, challenge2_section1,
+community_development_section1, educational_aid_section1,
+medical_aid_section1, update1_section1, update2_section1 and update3_section1 */
+.challenge1_section1,
+.challenge2_section1,
+.community_development_section1,
+.educational_aid_section1,
+.medical_aid_section1,
+.update1_section1,
+.update2_section1,
+.update3_section1 {
+    height: 60vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 7vw;
+}
+
+/* Target h1 elements within class challenge1_section1, challenge2_section1,
+community_development_section1, educational_aid_section1, medical_aid_section1,
+update1_section1, update2_section1 and update3_section1 */
+.challenge1_section1 h1,
+.challenge2_section1 h1,
+.community_development_section1 h1,
+.educational_aid_section1 h1,
+.medical_aid_section1 h1,
+.update1_section1 h1,
+.update2_section1 h1,
+.update3_section1 h1 {
+    font-size: 3.5vw; /* Adjust the font size */
+    width: 90vw; /* Adjust the width of the element */
+    top: 14vw; /* Adjust the vaule to move down */
+    left: 46vw; /* Adjust the vaule to move right */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class challenge1_section1, challenge2_section1,
+community_development_section1, educational_aid_section1, medical_aid_section1,
+update1_section1, update2_section1 and update3_section1 */
+.challenge1_section1 p,
+.challenge2_section1 p,
+.community_development_section1 p,
+.educational_aid_section1 p,
+.medical_aid_section1 p,
+.update1_section1 p,
+.update2_section1 p,
+.update3_section1 p {
+    font-size: 1.4vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 38vw; /* Adjust the width of the element */
+    margin-top: 10vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the image with class challenge1_section1, challenge2_section1,
+community_development_section1, educational_aid_section1, medical_aid_section1,
+update1_section1, update2_section1 and update3_section1 */
+.challenge1_section1 img,
+.challenge2_section1 img,
+.community_development_section1 img,
+.educational_aid_section1 img,
+.medical_aid_section1 img,
+.update1_section1 img,
+.update2_section1 img, 
+.update3_section1 img {
+    height: 43vw; /* Adjust the height of the element */
+    width: 45vw; /* Adjust the width of the element */
+    margin-top: 13vw; /* Adjust the vaule to move down */
+    margin-left: 50vw; /* Adjust the vaule to move right */
+    border-radius: 2vw;
+    box-shadow:  -23px 23px 46px #cfcfcf,
+             23px -23px 46px #ffffff;
+}
+
+/* Styles for class .challenge1_section2 */
+.challenge1_section2 {
+    height: 20vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 1vw;
+}
+
+/* Styles for class challenge2_section2 */
+.challenge2_section2 {
+    height: 25vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 5vw;
+}
+
+/* Styles for class community_development_section2 */
+.community_development_section2 {
+    height: 23vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: -0.5vw;
+}
+
+/* Styles for class educational_aid_section2 */
+.educational_aid_section2 {
+    height: 26vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: -2vw;
+}
+
+/* Styles for class medical_aid_section2 */
+.medical_aid_section2 {
+    height: 25vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: -0.5vw;
+}
+
+/* Styles for class update1_section2 */
+.update1_section2 {
+    height: 18vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 1vw;
+}
+
+/* Styles for class update2_section1 */
+.update2_section2 {
+    height: 15vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: -0.5vw;
+}
+
+/* Styles for class update3_section2 */
+.update3_section2 {
+    height: 25vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: -2.5vw;
+}
+
+/* Target paragraphs elements in class challenge1_section2, challenge2_section2,
+community_development_section2, educational_aid_section2, update1_section2,
+update2_section2 and update3_section2 */
+.challenge1_section2 p,
+.challenge2_section2 p,
+.community_development_section2 p,
+.educational_aid_section2 p,
+.medical_aid_section2 p,
+.update1_section2 p,
+.update2_section2 p,
+.update3_section2 p {
+    font-size: 1.4vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 80vw; /* Adjust the width of the element */
+    margin-top: 2vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* change the position of the footer */
+.sub_page_footer {
+    margin-top: 2vw; /* Adjust the vaule to move down */
+}

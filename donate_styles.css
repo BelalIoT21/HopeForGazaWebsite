@@ -1,0 +1,365 @@
+/* Styles for class .donate_section1*/
+.donate_section1 {
+    position: absolute; /* Position the element absolutely */
+    height: 55vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 7vw; /* Adjust the vaule to move down */
+}
+
+/* Styles for class .donate_section1_text*/
+.donate_section1_text {
+    position: absolute; /* Position the element absolutely */
+    height: 22vw; /* Adjust the height of the element */
+    width: 47vw; /* Adjust the width of the element */
+}
+
+/* Target h1 elements in class .donate_section1 */
+.donate_section1_text h1 {
+    font-size: 5vw; /* Adjust the font size */
+    margin-top: 2vw; /* Adjust the vaule to move down */
+    margin-left: 1.4vw; /* Adjust the vaule to right */
+}
+  
+/* Target paragraphs elements in class .donate_section1 */
+.donate_section1_text p {
+    font-size: 2vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 47vw; /* Adjust the width of the element */
+    margin-top: 9vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the image with class .donate_section1 */
+.donate_section1 img {
+    height: 35vw; /* Adjust the height of the element */
+    width: 35vw; /* Adjust the width of the element */
+    top: 7vw; /* Adjust the vaule to move down */
+    left: 55vw; /* Adjust the vaule to move right */
+    border-radius: 2vw;
+    box-shadow:  -23px 23px 46px #cfcfcf,
+             23px -23px 46px #ffffff;
+}
+
+/* Styles for class .donate_form_part1 */
+.donate_section1 .donate_form_part1 {
+    position: absolute; /* Position the element absolutely */
+    height: 25vw; /* Adjust the height of the element */
+    width: 50vw; /* Adjust the width of the element */
+    margin-top: 22vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* Styles for class .donation_choice */
+.donation_choice {
+    position: absolute; /* Position the element absolutely */
+    display: flex;
+    margin-top: 3.5vw; /* Adjust the vaule to move down */
+    margin-left: 3vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the buttons inside class .donation_choice */
+.donation_choice .button {
+    width: 20vw; /* Adjust the width of the button */
+    margin-right: 3vw; /* Add space to the right of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+}
+
+/* Styles for class .donation_amount */
+.donation_amount {
+    position: absolute; /* Position the element absolutely */
+    display: flex;
+    margin-top: 10vw; /* Adjust the vaule to move down */
+    margin-left: 3vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the buttons inside class .donation_amount */
+.donation_amount .button {
+    width: 8vw; /* Adjust the width of the button */
+    margin-right: 3.7vw; /* Add space to the right of the button */
+    padding: 1vw 1vw; /* Adjust the width of the button */
+}
+
+/* Styles for the input in class .donation_amount_input */
+.other_input input {
+    position: relative;
+    top: 16vw; /* Adjust the vaule to move down */
+    margin-left: 20vw; /* Adjust the vaule to right */
+    margin-bottom: 1vw; /* Add bottom margin to the input */
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 9vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+#customAmount::placeholder {
+    color: #e45656; /* Change the text color */
+    font-size: 1.5vw; /* Adjust the font size as needed */
+}
+
+#customAmount:focus {
+    outline: none; /* Remove the default outline */
+    border-color: #e45656; /* Change the border color when focused */
+    box-shadow: 0 0 5px #e45656; /* Add a box shadow when focused */
+}
+
+.next_button {
+    width: 9vw; /* Adjust the width of the button */
+    margin-top: 16vw; /* Adjust the vaule to move down */
+    margin-left: 20vw; /* Adjust the vaule to right */
+    padding: 1vw 1vw; /* Add padding to the button */
+}
+
+/* Styles for buttons */
+.button {
+    color: #e45656; /* color of the button text */
+    background-color: #fff; /* white background color for the button */
+    border: 2px solid #e45656; /* Set the border properties */
+    border-radius: 20px; /* Apply border radius for the button */
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+
+.button:hover {
+    color: #fff; /* text color changes to white when hovered over */
+    background-color: #e45656; /* background color changes to red when hovered over */
+    border: 2px solid #e45656; /* border color changes to red when hovered over */
+}
+
+.donate_form_part1 .next_button {
+    margin-top: 17vw; /* Adjust the vaule to move down */
+    margin-left: 20vw; /* Adjust the vaule to right */
+    width: 9vw; /* Adjust the width of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+    border: 0.3vw solid #e45656;
+}
+
+.donate_form_part1 .next_button:hover {
+    background-color: #e45656;
+    border: 0.3vw solid #fafafa;
+}
+
+/* Styles for selected buttons */
+.selected {
+    background-color: #e45656; /* red background color */
+    color: #fff; /* white text color */
+}
+
+.selected:hover {
+    background-color: #e45656; /* red background color */
+    color: #fff; /* white text color */
+}
+
+.selected:active {
+    background-color: #e45656; /* red background color */
+    color: #fff; /* white text color */
+}
+
+.selected:focus {
+    background-color: #e45656; /* red background color */
+    color: #fff; /* white text color */
+}
+
+/* Styles for buttons in the the class .header_block2, .header_block3 and emailList_formBlock */
+.header_block2 .button,
+.header_block3 .button,
+.emailList_formBlock .button {
+    color: #fafafa; /* color of the button text */
+    background-color: #e45656; /* white background color for the button */
+    border: 0.2vw solid #fafafa; /* Set the border properties */
+  }
+
+.header_block2 .button:hover,
+.header_block3 .button:hover,
+.emailList_formBlock .button:hover {
+    color: #e45656; /* text color changes to white when hovered over */
+    background-color: #fafafa; /* background color changes to red when hovered over */
+    border: 0.2vw solid #e45656; /* Set the border properties */
+}
+
+/* Styles for class .donate_form_part2 */
+.donate_section1 .donate_form_part2 {
+    position: absolute; /* Position the element absolutely */
+    height: 50vw; /* Adjust the height of the element */
+    width: 50vw; /* Adjust the width of the element */
+    margin-top: 22vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the header in class .donate_form_part2 */
+.donate_form_part2 h1 {
+    font-size: 2vw; /* Adjust the font size */
+    width: 40vw; /* Adjust the width of the element */
+    left: 25vw; /* Adjust the the value to move it right */
+    top: 2vw; /* Adjust the vaule to move down */
+    text-align:center; /* Align the text to the center */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+.donate_form_part2_change_button .button {
+    margin-top: 4.5vw; /* Adjust the vaule to move down */
+    margin-left: 20vw; /* Adjust the vaule to right */
+    width: 9vw; /* Adjust the width of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+    border: 0.3vw solid #e45656;
+}
+
+.donate_form_part2_change_button .button:hover {
+    background-color: #e45656;
+    border: 0.3vw solid #fafafa;
+}
+
+/* Styles for class .donate_form_part2_section1 */
+.donate_form_part2_section1 {
+    position: absolute; /* Position the element absolutely */
+    display: flex;
+    margin-top: -5vw; /* Adjust the vaule to move down */
+    margin-left: 1.5vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the input in class .donate_form_part2_section1 */
+.donate_form_part2_section1 input {
+    margin-bottom: 0vw; /* Add bottom margin to the input */
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 22vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+#donationForm2_firstName {
+    margin-right: 3vw; /* Adjust the vaule to right */
+}
+
+/* Styles for class .donate_form_part2_section2 */
+.donate_form_part2_section2 {
+    margin-top: 7.5vw; /* Adjust the vaule to move down */
+    margin-left: 1.5vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the input in class .donate_form_part2_section2 */
+.donate_form_part2_section2 input {
+    margin-bottom: 0vw; /* Add bottom margin to the input */
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 47vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+/* Styles for class .donate_form_part2_section3 */
+.donate_form_part2_section3 {
+    margin-top: 1.5vw; /* Adjust the vaule to move down */
+    margin-left: 1.5vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the input in class .donate_form_part2_section2 */
+.donate_form_part2_section3 input {
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 47vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+/* Styles for class .donate_form_part2_section4 */
+.donate_form_part2_section4 {
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+/* Styles for the input in class .donate_form_part2_section4 .cc-number */
+.donate_form_part2_section4 .cc-number {
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 47vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+
+/* Styles for class .donate_form_part2_section5 */
+.donate_form_part2_section5 {
+    position: absolute; /* Position the element absolutely */
+    display: flex;
+    margin-top: 1.5vw; /* Adjust the vaule to move down */
+    margin-left: 1.5vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the input in class .donate_form_part2_section5 */
+.donate_form_part2_section5 input {
+    font-size: 1.5vw; /* Adjust the font size */
+    width: 22vw; /* Adjust the width of the input */
+    padding: 0.8vw 0.5vw; /* Add padding to the input */
+    color: #e45656; /* Change the text color */
+    border-color: #e45656; /* Change the border color when focused */
+}
+
+.cc-expires {
+    margin-right: 3vw; /* Adjust the vaule to right */
+}
+
+/* Styles for the placeholder text in the inputs */
+#donationForm2_firstName::placeholder,
+#donationForm2_lastName::placeholder,
+#donationForm2_number::placeholder,
+#donationForm2_email::placeholder,
+#donationForm2_card_info::placeholder {
+    color: #e45656; /* Change the text color */
+    font-size: 1.5vw; /* Adjust the font size as needed */
+}
+
+#donationForm2_firstName:focus,
+#donationForm2_lastName:focus,
+#donationForm2_number:focus,
+#donationForm2_email:focus,
+#donationForm2_card_info:focus {
+    outline: none; /* Remove the default outline */
+    border-color: #e45656; /* Change the border color when focused */
+    box-shadow: 0 0 5px #e45656; /* Add a box shadow when focused */
+}
+
+/* Styles for the placeholder text in the inputs */
+.cc-number::placeholder,
+.cc-expires::placeholder,
+.cc-cvc::placeholder {
+    color: #e45656; /* Change the text color */
+    font-size: 1.5vw; /* Adjust the font size as needed */
+}
+
+.cc-number:focus,
+.cc-expires:focus,
+.cc-cvc:focus {
+    outline: none; /* Remove the default outline */
+    border-color: #e45656; /* Change the border color when focused */
+    box-shadow: 0 0 5px #e45656; /* Add a box shadow when focused */
+}
+
+.donate_form_part2_submit_button .button {
+    position: absolute; /* Position the element absolutely */
+    margin-top: 8vw; /* Adjust the vaule to move down */
+    margin-left: 39.5vw; /* Adjust the vaule to right */
+    width: 9vw; /* Adjust the width of the button */
+    padding: 1vw 1vw; /* Add padding to the button */
+    border: 0.3vw solid #e45656;
+}
+
+.donate_form_part2_submit_button .button:hover {
+    background-color: #e45656;
+    border: 0.3vw solid #fafafa;
+}
+
+/* Define transition for height and opacity changes */
+.donate_form_part1,
+.donate_form_part2 {
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+/* change the position of section2 */
+.donate_section2 {
+    margin-top: 50vw; /* Adjust the vaule to move down */
+}
+
+/* change the position of the footer */
+.donate_footer {
+    margin-top: 93vw; /* Adjust the vaule to move down */
+}

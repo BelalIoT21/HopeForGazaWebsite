@@ -1,0 +1,182 @@
+<!DOCTYPE html> <!-- Declaration of HTML5 document type -->
+<html lang="en"> <!-- Root element of the HTML document with language attribute set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character set declaration for proper text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport configuration for responsive design -->
+    <title>Donate - HFG Charity</title> <!-- Title of the HTML document -->
+    <link rel="icon" type="image/png" href="pictures/HFG_Logo_Part1.png">
+    <link rel="stylesheet" type="text/css" href="index_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="our_work_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="donate_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <script src="our_work_script.js" defer></script> <!-- Link to your external JavaScript file -->
+    <script src="donate_script.js" defer></script> <!-- Link to your external JavaScript file -->
+</head>
+<body>
+    <div>
+        <div class= "header_block2">
+            <img class="logo1" onclick="window.location.href='index.html'" src="pictures/HFG_Logo.png" alt="HFG Charity">
+            <nav>
+                <ul>
+                    <li><a onclick="window.location.href='our_work_page.html'">Our Work</a>
+                        <ul class="submenu1">
+                            <li><a onclick="window.location.href='community_development_page.html'">Community Development</a></li>
+                            <li><a onclick="window.location.href='educational_aid_page.html'">Educational Aid</a></li>
+                            <li><a onclick="window.location.href='medical_aid_page.html'">Medical Aid</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='participate_page.html'">Participate</a>
+                        <ul class="submenu2">
+                            <li><a onclick="window.location.href='participate_page.html'">Participate</a></li>
+                            <li><a onclick="navigateAndScroll()">Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='about_us_page.html'">About Us</a>
+                        <ul class="submenu3">
+                            <li><a onclick="window.location.href='updates_page.html'">Updates</a></li>
+                            <li><a onclick="window.location.href='contact_us_page.html'">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" class="button donate1 bold" value="Donate" onclick="window.location.href='donate_page.html'">
+        </div>
+        <div class="header_block3 hidden">
+            <img class="logo2" onclick="window.location.href='index.html'" src="pictures/HFG_Logo_Part1.png" alt="HFG Charity">
+            <nav>
+                <ul>
+                    <li><a onclick="window.location.href='our_work_page.html'">Our Work</a>
+                        <ul class="submenu4">
+                            <li><a onclick="window.location.href='community_development_page.html'">Community Development</a></li>
+                            <li><a onclick="window.location.href='educational_aid_page.html'">Educational Aid</a></li>
+                            <li><a onclick="window.location.href='medical_aid_page.html'">Medical Aid</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='participate_page.html'">Participate</a>
+                        <ul class="submenu5">
+                            <li><a onclick="window.location.href='participate_page.html'">Participate</a></li>
+                            <li><a onclick="navigateAndScroll()">Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='about_us_page.html'">About Us</a>
+                        <ul class="submenu6">
+                            <li><a onclick="window.location.href='updates_page.html'">Updates</a></li>
+                            <li><a onclick="window.location.href='contact_us_page.html'">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" class="button donate3 bold" value="Donate" onclick="window.location.href='donate_page.html'">
+        </div>
+        <div class="donate_section1">
+            <div class="donate_section1_text">
+            <h1>Donate</h1>
+            <p>Gaza, devastated by years of conflict, now lies in ruins. Yet, within every child, 
+                every home, lies hope. Let's rebuild together, restoring not just buildings, 
+                but the dignity and spirit of Gaza's people.
+            </p>
+            </div>
+            <img class="logo" src="pictures/HFG_Donate.png" alt="HFG Charity Donate">
+            <div class="donate_form_part1" id="donate_form_part1">
+                <form id="donationForm">
+                    <div class="donation_choice">
+                        <button id="oneOffButton" class="button">One-off</button>
+                        <button id="monthlyButton" class="button">Every Month</button>
+                    </div>
+                    <div class="donation_amount">
+                        <button id="amount5Button" class="button" onclick="selectDonationAmount(5)">£5</button>
+                        <button id="amount10Button" class="button" onclick="selectDonationAmount(10)">£10</button>
+                        <button id="amount25Button" class="button" onclick="selectDonationAmount(25)">£25</button>
+                        <button id="otherAmountButton" class="button" onclick="selectOtherAmount()">Other</button>
+                    </div>
+                    <div class="other_input">
+                        <input type="number" id="customAmount" class="hidden" placeholder="Other" min="1">
+                    </div>
+                    <div>
+                        <button class="button next_button bold" onclick="proceedToNext()">Next</button>
+                    </div>
+                </form>                               
+            </div>
+            <div class="donate_form_part2 hidden" id="donate_form_part2">
+                <div><h1 id="donationHeader">Donating £ To General Fund</h1></div>
+                <div class="donate_form_part2_change_button">
+                    <button class="button bold" id="changeButton" onclick="goBack()">Change</button>
+                </div>
+                <form id="donationForm2">
+                    <div class="donate_form_part2_section1">
+                        <input type="text" id="donationForm2_firstName" placeholder="First Name">
+                        <input type="text" id="donationForm2_lastName" placeholder="Last Name">
+                    </div>
+                    <div class="donate_form_part2_section2">
+                        <input type="text" id="donationForm2_number" placeholder="Mobil:">
+                    </div>
+                    <div class="donate_form_part2_section3">
+                        <input type="email" id="donationForm2_email" placeholder="Email Address">
+                    </div>
+                    <div class="donate_form_part2_section4">
+                        <input id="credit-number" class="cc-number" type="tel" maxlength="19" placeholder="Card Number">
+                    </div>
+                    <div class="donate_form_part2_section5">
+                        <input id="credit-expires" class="cc-expires" type="tel" maxlength="7" placeholder="MM / YY">
+                        <input id="credit-cvc" class="cc-cvc" type="tel" maxlength="3" placeholder="CVC">
+                    </div>                
+                    <div class="donate_form_part2_submit_button">
+                        <button class="button bold" id="donationForm2_submit_button">Submit</button>
+                    </div>
+                </form>                               
+            </div>
+        </div>
+        <div class="section6 donate_section2">
+            <div>
+                <h1>Stay Connected &#x1F64C;</h1>
+                <p>Join our mailing list to learn<br> about the most important<br> initiatives taking place in<br> Palestine and how you can<br> help.
+                </p>
+                <img class="HFG_open_letter" src="pictures/HFG_open_letter_icon.png" alt="Open HFG Letter">
+            </div>
+            <!-- The div container for the Email list form -->
+			<div class="emailList_formBlock">
+				<div>
+					<h1>subscribe</h1>
+				</div>
+				<form id="emailListForm">
+					<!-- Div for first name input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>First Name</label>
+							<input name="mailList_firstName" type="text" size="25">
+						</div>
+					</div>
+					<!-- Div for last name input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>Last Name</label>
+							<input name="mailList_lastName" type="text" size="25">
+						</div>
+					</div>
+					<!-- Div for email input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>Email</label>
+							<input name="mailList_email" type="email" size="25">
+						</div>
+					</div>
+					<!-- Div for the submit button -->
+					<div>
+						<button id="mailList_submitButton" class="button bold">Submit</button>
+					</div>
+				</form>
+			</div>
+        </div>
+        <div>
+            <!-- The Div containing the footer -->
+            <footer class="donate_footer">
+                <img class="logo" src="pictures/HFG_Logo.png" alt="HFG Charity">
+                <span>THIS IS DEMO PAGE</span><br>
+                <p>we don't actually subscribe you to any mailing list or take your money but you are more than welcome to try the forms<br> 
+                    © Copyright HFG Charity - All rights reserved</p>
+                <button class="donate2 button bold" onclick="window.location.href='donate_page.html'">Donate</button>
+                <button class="contact_us button bold" onclick="window.location.href='contact_us_page.html'">Contact Us</button>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

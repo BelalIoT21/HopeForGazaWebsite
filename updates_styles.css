@@ -1,0 +1,165 @@
+/* Styles for class .updates_section1 */
+.updates_section1 {
+  position: absolute; /* Position the element absolutely */
+  height: 105vw; /* Adjust the height of the element */
+  width: 99vw; /* Adjust the width of the element */
+  margin-top: 12vw; /* Adjust the vaule to move down */
+}
+
+/* Target h1 elements within elements with class .updates_section1 */
+.updates_section1 h1 {
+  font-size: 4vw; /* Adjust the font size */
+  margin-top: 2vw; /* Adjust the vaule to move down */
+  width: 85vw; /* Adjust the width of the element */
+  left: 55vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block6 */
+.block6 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  height: 40vw; /* Adjust the height of the element */
+  width: 35vw; /* Adjust the width of the element */
+  top: 8vw; /* Adjust the vaule to move down */
+  left: 13vw; /* Adjust the vaule to move right */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block6 */
+.updates_section1 .block6 img {
+  width: 34.4vw;  /* Adjust the width of the img */
+  height: 29.5vw;  /* Adjust the height of the img */
+  margin-top: 0.3vw; /* Adjust the value to move down */
+  margin-left: 0.3vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block6 */
+.updates_section1 .block6 h1 {
+  font-size: 2vw; /* Adjust the font size */
+  margin-top: 2.8vw; /* Adjust the vaule to move down */
+  width: 34vw; /* Adjust the width of the element */
+  left: 17.6vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block6 */
+.updates_section1 .block6 p {
+  font-size: 1.8vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 36vw; /* Adjust the width of the element */
+  top: 37vw; /* Adjust the valie to move it down */
+  left: 17.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block7 */
+.block7 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  height: 40vw; /* Adjust the height of the element */
+  width: 35vw; /* Adjust the width of the element */
+  top: 8vw; /* Adjust the vaule to move down */
+  left: 53vw; /* Adjust the vaule to move right */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block7 */
+.updates_section1 .block7 img {
+  width: 34.4vw;  /* Adjust the width of the img */
+  height: 29.5vw;  /* Adjust the height of the img */
+  margin-top: 0.3vw; /* Adjust the value to move down */
+  margin-left: 0.3vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block7 */
+.updates_section1 .block7 h1 {
+  font-size: 2vw; /* Adjust the font size */
+  margin-top: 2.8vw; /* Adjust the vaule to move down */
+  width: 33vw; /* Adjust the width of the element */
+  left: 19.2vw; /* Adjust the vaule to move right */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block7 */
+.updates_section1 .block7 p {
+  font-size: 1.8vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 30vw; /* Adjust the width of the element */
+  top: 37vw; /* Adjust the valie to move it down */
+  left: 17.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block8 */
+.block8 {
+  position: absolute; /* Position the element absolutely */
+  background-color: rgb(255, 254, 254); /* Background color of the block */
+  border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+  cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+  height: 40vw; /* Adjust the height of the element */
+  width: 35vw; /* Adjust the width of the element */
+  top: 53vw; /* Adjust the vaule to move down */
+  left: 13vw; /* Adjust the vaule to move right */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the image in the block8 */
+.updates_section1 .block8 img {
+  width: 34.4vw;  /* Adjust the width of the img */
+  height: 29.5vw;  /* Adjust the height of the img */
+  margin-top: 0.3vw; /* Adjust the value to move down */
+  margin-left: 0.3vw; /* Adjust the value to move right */
+  border-radius: 0.5vw;
+}
+
+/* Styles for the header in the block8 */
+.updates_section1 .block8 h1 {
+  font-size: 1.8vw; /* Adjust the font size */
+  margin-top: 2.8vw; /* Adjust the vaule to move down */
+  width: 33vw; /* Adjust the width of the element */
+  left: 17.5vw; /* Adjust the vaule to move right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block8 */
+.updates_section1 .block8 p {
+  font-size: 1.5vw; /* Adjust the font size */
+  color: #333; /* Change the font color */
+  width: 32vw; /* Adjust the width of the element */
+  top: 37vw; /* Adjust the valie to move it down */
+  left: 17.5vw; /* Adjust the the value to move it right */
+  text-align:center; /* Align the text to the center */
+  transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+.updates_section1 .block6:hover::before,
+.updates_section1 .block7:hover::before,
+.updates_section1 .block8:hover::before {
+  height: 50%; /* Adjust the height of the element */
+  width: 200%; /* Adjust the width of the element */
+  top: 15vw; /* Adjust the value to move down */
+  left: -20vw; /* Adjust the value to move right */
+}
+
+/* change the position of section2 */
+.updates_section2 {
+  margin-top: 110vw; /* Adjust the vaule to move down */
+}
+
+/* change the position of the footer */
+.updates_footer {
+  margin-top: 153vw; /* Adjust the vaule to move down */
+}

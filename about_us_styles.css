@@ -1,0 +1,230 @@
+/* Styles for class .about_us_section1 */
+.about_us_section1 {
+    display: flex; /* Establish a flex container */
+    flex-direction: row; /* Arrange flex items horizontally */
+    justify-content: space-between; /* Add space between flex items */
+    height: 105vw; /* Adjust the height of the element */
+    width: 99vw; /* Adjust the width of the element */
+    margin-top: 12vw; /* Adjust the value to move down */
+}
+
+/* Styles for class .about_us_section1_part1 */
+.about_us_section1_part1 {
+    height: 105vw; /* Adjust the height of the element */
+    width: 60vw; /* Adjust the width of the element */
+    margin-top: -3vw;
+}
+
+/* Target h1 elements within elements with class .about_us_section1_part1 */
+.about_us_section1_part1 h1 {
+    font-size: 3.5vw; /* Adjust the font size */
+    width: 24vw; /* Adjust the width of the element */
+    top: 12vw; /* Adjust the vaule to move down */
+    left: 13.5vw; /* Adjust the vaule to move right */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Target paragraphs elements in class .about_us_section1_part1 */
+.about_us_section1_part1 p {
+    font-size: 1.4vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 55vw; /* Adjust the width of the element */
+    margin-top: 6vw; /* Adjust the vaule to move down */
+    margin-left: 2vw; /* Adjust the vaule to right */
+}
+
+/* Target the span elements in class .about_us_section1_part1 */
+.about_us_section1_part1 span {
+    font-size: 1.5vw; /* Adjust the font size */
+    font-weight: bold;
+    color: #e45656; /* Change the font color */  
+}
+
+  /* styles for the the list in section1 */
+.about_us_section1_part1 ul {
+    position: absolute; /* Position the footer absolute to the viewport */
+    font-size: 1.5vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    list-style: none;  /* Remove the default list styles */
+    top: 71vw; /* Adjust margin to move it down */
+    left: 4vw; /* Places it halfway across from the left */
+}
+
+.about_us_section1_part1 li {
+    position: relative;
+    padding-left: 1.5vw; /* Adjust padding to make space for the pseudo-element */
+    margin-bottom: 1vw; /* Adjust margin as needed */
+}
+
+.about_us_section1_part1 li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.7vw; /* Adjust the width of the square */
+    height: 0.7vw; /* Adjust the height of the square */
+    background-color: #ccc; /* Default color */
+    border-radius: 0.15vw; /* Make the corners slightly rounded */
+}
+
+.about_us_section1_part1 li:nth-child(1)::before {
+    background-color: #ff3131; /* First square color */
+}
+
+.about_us_section1_part1 li:nth-child(2)::before {
+    background-color: #ffbd59; /* Second square color */
+}
+
+.about_us_section1_part1 li:nth-child(3)::before {
+    background-color: #ff914d; /* Third square color */
+}
+
+/* Styles for class .about_us_section1_part2 */
+.about_us_section1_part2 {
+    display: flex; /* Establish a flex container */
+    flex-direction: column; /* Arrange flex items vertically */
+    height: 105vw; /* Adjust the height of the element */
+    width: 35vw; /* Adjust the width of the element */
+}
+
+
+/* Target h1 elements within elements with class .about_us_section1_part2 */
+.about_us_section1_part2 h1 {
+    font-size: 3vw; /* Adjust the font size */
+    width: 24vw; /* Adjust the width of the element */
+    top: 16vw; /* Adjust the vaule to move down */
+    left: 81vw; /* Adjust the vaule to move right */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block6 */
+.block6 {
+    background-color: rgb(255, 254, 254); /* Background color of the block */
+    border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+    cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+    height: 27vw; /* Adjust the height of the element */
+    width: 25vw; /* Adjust the width of the element */
+    top: 20vw; /* Adjust the vaule to move down */
+    left: 69vw; /* Adjust the vaule to move right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the header in the block6 */
+.about_us_section1 .block6 h1 {
+    font-size: 1.3vw; /* Adjust the font size */
+    width: 23vw; /* Adjust the width of the element */
+    top: 22vw; /* Adjust the vaule to move down */
+    left: 12.5vw; /* Adjust the vaule to move right */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block6 */
+.about_us_section1 .block6 p {
+    font-size: 1.1vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 23vw; /* Adjust the width of the element */
+    top: 25vw; /* Adjust the valie to move it down */
+    left: 12vw; /* Adjust the the value to move it right */
+    text-align:center; /* Align the text to the center */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block7 */
+.block7 {
+    background-color: rgb(255, 254, 254); /* Background color of the block */
+    border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+    cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+    height: 27vw; /* Adjust the height of the element */
+    width: 25vw; /* Adjust the width of the element */
+    top: 52vw; /* Adjust the vaule to move down */
+    left: 69vw; /* Adjust the vaule to move right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+
+/* Styles for the header in the block7 */
+.about_us_section1 .block7 h1 {
+    font-size: 1.4vw; /* Adjust the font size */
+    width: 23vw; /* Adjust the width of the element */
+    top: 22vw; /* Adjust the vaule to move down */
+    left: 13vw; /* Adjust the vaule to move right */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block7 */
+.about_us_section1 .block7 p {
+    font-size: 1.1vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 23vw; /* Adjust the width of the element */
+    top: 25vw; /* Adjust the valie to move it down */
+    left: 12vw; /* Adjust the the value to move it right */
+    text-align:center; /* Align the text to the center */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for block8 */
+.block8 {
+    background-color: rgb(255, 254, 254); /* Background color of the block */
+    border-radius: 15px; /* Adjust the border-radius to control the roundness of corners */
+    cursor: pointer; /* Set cursor to pointer to indicate interactive elements */
+    height: 27vw; /* Adjust the height of the element */
+    width: 25vw; /* Adjust the width of the element */
+    top: 84vw; /* Adjust the vaule to move down */
+    left: 69vw; /* Adjust the vaule to move right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+/* Styles for the header in the block8 */
+.about_us_section1 .block8 h1 {
+    font-size: 1.4vw; /* Adjust the font size */
+    width: 23vw; /* Adjust the width of the element */
+    top: 22.1vw; /* Adjust the vaule to move down */
+    left: 12.2vw; /* Adjust the vaule to move right */
+    text-align:center; /* Align the text to the center */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the paragraph in the block8 */
+.about_us_section1 .block8 p {
+    font-size: 1.1vw; /* Adjust the font size */
+    color: #333; /* Change the font color */
+    width: 23vw; /* Adjust the width of the element */
+    top: 25vw; /* Adjust the valie to move it down */
+    left: 12.5vw; /* Adjust the the value to move it right */
+    text-align:center; /* Align the text to the center */
+    transform: translate(-50%, -50%); /* Centers it precisely */
+}
+
+/* Styles for the image in the block6, block7 and block8 */
+.about_us_section1 .block6 img,
+.about_us_section1 .block7 img,
+.about_us_section1 .block8 img {
+    width: 24.4vw;  /* Adjust the width of the img */
+    height: 19.5vw;  /* Adjust the height of the img */
+    margin-top: 0.3vw; /* Adjust the value to move down */
+    margin-left: 0.3vw; /* Adjust the value to move right */
+    border-radius: 0.5vw; /* Make the corners of the image round */
+}
+
+.about_us_section1 .block6:hover::before,
+.about_us_section1 .block7:hover::before,
+.about_us_section1 .block8:hover::before {
+    height: 50%; /* Adjust the height of the element */
+    width: 200%; /* Adjust the width of the element */
+    top: 15vw; /* Adjust the value to move down */
+    left: -20vw; /* Adjust the value to move right */
+}
+
+/* change the position of section2 */
+.about_us_section2 {
+    margin-top: 0vw; /* Adjust the vaule to move down */
+}
+
+/* change the position of the footer */
+.about_us_footer {
+    margin-top: 43vw; /* Adjust the vaule to move down */
+}

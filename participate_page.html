@@ -1,0 +1,201 @@
+<!DOCTYPE html> <!-- Declaration of HTML5 document type -->
+<html lang="en"> <!-- Root element of the HTML document with language attribute set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character set declaration for proper text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport configuration for responsive design -->
+    <title>Participate - HFG Charity</title> <!-- Title of the HTML document -->
+    <link rel="icon" type="image/png" href="pictures/HFG_Logo_Part1.png">
+    <link rel="stylesheet" type="text/css" href="index_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="our_work_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="donate_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="participate_styles.css"> <!-- Link to an external CSS stylesheet -->
+    <script src="our_work_script.js" defer></script> <!-- Link to your external JavaScript file -->
+    <script src="participate_script.js" defer></script> <!-- Link to your external JavaScript file -->
+</head>
+<body>
+    <div>
+        <div class= "header_block2">
+            <img class="logo1" onclick="window.location.href='index.html'" src="pictures/HFG_Logo.png" alt="HFG Charity">
+            <nav>
+                <ul>
+                    <li><a onclick="window.location.href='our_work_page.html'">Our Work</a>
+                        <ul class="submenu1">
+                            <li><a onclick="window.location.href='community_development_page.html'">Community Development</a></li>
+                            <li><a onclick="window.location.href='educational_aid_page.html'">Educational Aid</a></li>
+                            <li><a onclick="window.location.href='medical_aid_page.html'">Medical Aid</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='participate_page.html'" style="color: #3d3a3a;">Participate</a>
+                        <ul class="submenu2">
+                            <li><a onclick="window.location.href='participate_page.html'">Participate</a></li>
+                            <li><a onclick="navigateAndScroll()">Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='about_us_page.html'">About Us</a>
+                        <ul class="submenu3">
+                            <li><a onclick="window.location.href='updates_page.html'">Updates</a></li>
+                            <li><a onclick="window.location.href='contact_us_page.html'">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" class="button donate1 bold" value="Donate" onclick="window.location.href='donate_page.html'">
+        </div>
+        <div class="header_block3 hidden">
+            <img class="logo2" onclick="window.location.href='index.html'" src="pictures/HFG_Logo_Part1.png" alt="HFG Charity">
+            <nav>
+                <ul>
+                    <li><a onclick="window.location.href='our_work_page.html'">Our Work</a>
+                        <ul class="submenu4">
+                            <li><a onclick="window.location.href='community_development_page.html'">Community Development</a></li>
+                            <li><a onclick="window.location.href='educational_aid_page.html'">Educational Aid</a></li>
+                            <li><a onclick="window.location.href='medical_aid_page.html'">Medical Aid</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='participate_page.html'" style="color: #e45656;">Participate</a>
+                        <ul class="submenu5">
+                            <li><a onclick="window.location.href='participate_page.html'">Participate</a></li>
+                            <li><a onclick="navigateAndScroll()">Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="window.location.href='about_us_page.html'">About Us</a>
+                        <ul class="submenu6">
+                            <li><a onclick="window.location.href='updates_page.html'">Updates</a></li>
+                            <li><a onclick="window.location.href='contact_us_page.html'">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <input type="button" class="button donate3 bold" value="Donate" onclick="window.location.href='donate_page.html'">
+        </div>
+        <div class="participate_section1">
+            <h1>Now let's get going!</h1>
+            <p>Put yourself to the test, help out here, or start a fundraiser. Whatever way you choose to change things, do it with us.
+                <br><br><br><br>
+                How do you want to participate?
+            </p>
+            <div class="participate_form_part1" id="participate_form_part1">
+                <form id="participateForm">
+                    <div class="participation_choice">
+                        <button id="volunteerButton" class="button">Volunteer</button>
+                        <div class="volunteer_text hidden" id="volunteerText">
+                            <h1>Excellent decision! It won't take long for you to join the best group of volunteers.</h1>
+                            <p>Please be aware that all of our volunteer opportunities are located in the United Kingdom and that 
+                                you must be at least eighteen years old to participate.</p>
+                        </div>
+                        <button id="fundraiseButton" class="button">Fundraise</button>
+                        <div class="fundraise_text hidden" id="fundraiseText">
+                            <h1>Good choise! Let's prepare you for raising money...</h1>
+                            <p>We'll provide you all the tools and support you need to begin fundraising for 
+                                Gaza over the course of the following three days.</p>
+                        </div>
+                        <button id="notSureButton" class="button">Not Sure</button>
+                        <div class="not_sure_text hidden" id="notSureText">
+                            <h1>That's not a problem! We are able to assist you in finding the ideal role for you.</h1>
+                            <p>We'll put you in touch with our helpful team as soon as possible to 
+                                assist you find an activity that suits you.</p>
+                        </div>
+                    </div>
+                        <button class="button next_button bold hidden" id="nextButton" onclick="proceedToNext()">Next</button>
+                </form>
+            </div>
+            <div class="donate_form_part2 participate_form_part2 hidden" id="participate_form_part2">
+                <form id="participateForm2">
+                    <div class="donate_form_part2_section1">
+                        <input type="text" id="donationForm2_firstName" placeholder="First Name">
+                        <input type="text" id="donationForm2_lastName" placeholder="Last Name">
+                    </div>
+                    <div class="donate_form_part2_section2">
+                        <input type="text" id="donationForm2_number" placeholder="Mobil:">
+                    </div>
+                    <div class="donate_form_part2_section3">
+                        <input type="email" id="donationForm2_email" placeholder="Email Address">
+                    </div>               
+                    <div class="donate_form_part2_submit_button participate_form_part2_submit_button">
+                        <button class="button bold" id="donationForm2_submit_button">Submit</button>
+                    </div>
+                </form>                               
+            </div>
+                <!-- Add a header for the success message -->
+                <h1 id="successMessage" class="hidden">Success! Your action has been completed.</h1>
+            </div>
+        <div class="participate_section2">
+            <div>
+                <h1>Rally for Gaza with Our Cause to Empower Change</h1>
+                <p>At our organisation we think that group efforts may yield great results.There are several ways that you may help us 
+                    in our efforts to raise the standard of living for Palestinians.Your engagement counts, whether you decide to plan 
+                    a one-of-a-kind event or take part in one of our creative HFG Charity Challenges.
+                    <br><br>
+                    We are really appreciative of each and every one of our supporters that goes above and beyond in order to raise 
+                    essential donations for Gaza. Today, take a step forward, and together, let's make a lasting impression. &#127775; &#129330;</p>
+            </div>
+            <img src="pictures/participate.png" alt="Participate Image">
+        </div>
+        <div class="section3 participate_section3">
+			<h1>Get involved with a challenge</h1>
+			<div class="block1" onclick="window.location.href='challenge1_page.html'">
+				<img src="pictures/challenge1.png" alt="Challange 1">
+				<h1>Stride for Hope: Virtual Marathon Supporting Gaza</h1>
+				<p>Run, Walk, or Cycle to Make a Difference</p>
+			</div>
+			<div class="block2" onclick="window.location.href='challenge2_page.html'">
+				<img src="pictures/challenge2.png" alt="Challange 2">
+				<h1>Threads of Unity: Gaza Solidarity Bracelets</h1>
+				<p>Wear Your Support, One Bead at a Time</p>
+			</div>
+		</div>
+        <div class="section6 participate_section4">
+            <div>
+                <h1>Stay Connected &#x1F64C;</h1>
+                <p>Join our mailing list to learn<br> about the most important<br> initiatives taking place in<br> Palestine and how you can<br> help.
+                </p>
+                <img class="HFG_open_letter" src="pictures/HFG_open_letter_icon.png" alt="Open HFG Letter">
+            </div>
+            <!-- The div container for the Email list form -->
+			<div class="emailList_formBlock">
+				<div>
+					<h1>subscribe</h1>
+				</div>
+				<form id="emailListForm">
+					<!-- Div for first name input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>First Name</label>
+							<input name="mailList_firstName" type="text" size="25">
+						</div>
+					</div>
+					<!-- Div for last name input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>Last Name</label>
+							<input name="mailList_lastName" type="text" size="25">
+						</div>
+					</div>
+					<!-- Div for email input -->
+					<div class="mailList_masterClass">
+						<div>
+							<label>Email</label>
+							<input name="mailList_email" type="email" size="25">
+						</div>
+					</div>
+					<!-- Div for the submit button -->
+					<div>
+						<button id="mailList_submitButton" class="button bold">Submit</button>
+					</div>
+				</form>
+			</div>
+        </div>
+        <div>
+            <!-- The Div containing the footer -->
+            <footer class="participate_footer">
+                <img class="logo" src="pictures/HFG_Logo.png" alt="HFG Charity">
+                <span>THIS IS DEMO PAGE</span><br>
+                <p>we don't actually subscribe you to any mailing list or take your money but you are more than welcome to try the forms<br> 
+                    © Copyright HFG Charity - All rights reserved</p>
+                <button class="donate2 button bold" onclick="window.location.href='donate_page.html'">Donate</button>
+                <button class="contact_us button bold" onclick="window.location.href='contact_us_page.html'">Contact Us</button>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
