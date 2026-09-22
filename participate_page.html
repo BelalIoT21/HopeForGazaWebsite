@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participate - HFG Charity</title>
+  <meta name="description" content="Volunteer, fundraise or take on a challenge to support HFG Charity's work in Gaza.">
+  <link rel="icon" type="image/png" href="pictures/HFG_Logo_Part1.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/participate.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Hope for Gaza Charity — home">
+        <img src="pictures/HFG_Logo_Part1.png" alt="" width="40" height="40">
+        <span class="brand-text"><strong>Hope for Gaza</strong><small>Charity</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li class="has-submenu">
+            <a class="nav-link" href="our_work_page.html">Our Work</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle Our Work submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="community_development_page.html">Community Development</a></li>
+              <li><a href="educational_aid_page.html">Educational Aid</a></li>
+              <li><a href="medical_aid_page.html">Medical Aid</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="participate_page.html" aria-current="page">Participate</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle Participate submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="participate_page.html">Participate</a></li>
+              <li><a href="participate_page.html#challenges">Challenges</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="about_us_page.html">About Us</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle About Us submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="updates_page.html">Updates</a></li>
+              <li><a href="contact_us_page.html">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="btn btn-primary nav-donate" href="donate_page.html">Donate</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Now let's get going!</h1>
+        <p>Put yourself to the test, help out here, or start a fundraiser. Whatever way you choose to make a difference, do it with us.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>How do you want to participate?</h2>
+
+      <div id="participateStep1">
+        <div class="choice-group" role="group" aria-label="Ways to participate">
+          <button class="btn btn-outline" type="button" data-choice="volunteer" id="volunteerButton">Volunteer</button>
+          <button class="btn btn-outline" type="button" data-choice="fundraise" id="fundraiseButton">Fundraise</button>
+          <button class="btn btn-outline" type="button" data-choice="not-sure" id="notSureButton">Not Sure</button>
+        </div>
+
+        <div class="choice-panel is-hidden" id="panel-volunteer">
+          <h3>Excellent decision!</h3>
+          <p>It won't take long for you to join our team of volunteers. All of our volunteer opportunities are located in the United Kingdom, and you must be at least eighteen years old to take part.</p>
+        </div>
+        <div class="choice-panel is-hidden" id="panel-fundraise">
+          <h3>Good choice! Let's get you set up for fundraising.</h3>
+          <p>We'll give you all the tools and support you need to start fundraising for Gaza within the next three days.</p>
+        </div>
+        <div class="choice-panel is-hidden" id="panel-not-sure">
+          <h3>That's not a problem!</h3>
+          <p>We'll put you in touch with our friendly team as soon as possible to help you find an activity that suits you.</p>
+        </div>
+
+        <button class="btn btn-primary is-hidden" type="button" id="participateNext">Next</button>
+      </div>
+
+      <div class="form-panel is-hidden" id="participateStep2">
+        <div class="form-panel-header"><h3>Your details</h3></div>
+        <form id="participateForm2" novalidate>
+          <div class="form-grid two-up">
+            <input type="text" id="participantFirstName" placeholder="First Name" autocomplete="given-name" required>
+            <input type="text" id="participantLastName" placeholder="Last Name" autocomplete="family-name" required>
+          </div>
+          <div class="form-grid" style="margin-top: 0.75rem;">
+            <input type="tel" id="participantMobile" placeholder="Mobile number" autocomplete="tel" required>
+          </div>
+          <div class="form-grid" style="margin-top: 0.75rem;">
+            <input type="email" id="participantEmail" placeholder="Email Address" autocomplete="email" required>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="success-panel is-hidden" id="participateSuccess">
+        <h2>Success! Your action has been completed.</h2>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="media-block">
+          <div class="media-block-text">
+            <span class="eyebrow">Why It Matters</span>
+            <h2>Rally for Gaza with our cause to empower change</h2>
+            <p>We believe group efforts yield great results. There are many ways you can help us raise the standard of living for Palestinians — your engagement counts, whether you plan a one-of-a-kind event or take part in one of our HFG Charity challenges.</p>
+            <p>We're grateful to every supporter who goes above and beyond to raise essential donations for Gaza. Take a step forward today, and together, let's make a lasting difference. 🌟🤲</p>
+          </div>
+          <div class="media-block-media">
+            <img src="pictures/participate.png" alt="Volunteers taking part in an HFG Charity event" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="challenges">
+      <div class="section-header">
+        <span class="eyebrow">Get Involved</span>
+        <h2>Get involved with a challenge</h2>
+      </div>
+      <div class="card-grid">
+        <a class="card" href="challenge1_page.html">
+          <div class="card-media"><img src="pictures/challenge1.png" alt="A runner taking part in the Stride for Hope virtual marathon" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Stride for Hope: Virtual Marathon Supporting Gaza</h3>
+            <p>Run, walk, or cycle to make a difference.</p>
+            <span class="card-arrow">Learn more →</span>
+          </div>
+        </a>
+        <a class="card" href="challenge2_page.html">
+          <div class="card-media"><img src="pictures/challenge2.png" alt="Handmade Gaza solidarity bracelets" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Threads of Unity: Gaza Solidarity Bracelets</h3>
+            <p>Wear your support, one bead at a time.</p>
+            <span class="card-arrow">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section newsletter container" id="stay-connected">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2>Stay Connected 🙌</h2>
+          <p>Join our mailing list to learn about the most important initiatives taking place in Palestine and how you can help.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <h3>Subscribe</h3>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nl-first">First name</label>
+              <input id="nl-first" name="firstName" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="nl-last">Last name</label>
+              <input id="nl-last" name="lastName" type="text" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="nl-email">Email</label>
+            <input id="nl-email" name="email" type="email" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="pictures/HFG_Logo_Part1.png" alt="" width="40" height="40">
+        <span>Hope for Gaza Charity</span>
+      </div>
+      <div>
+        <span class="demo-badge">This is a demo site</span>
+        <p class="footer-note">We don't sign you up for a mailing list or take any payment — feel free to try the forms.<br>© <span id="year"></span> HFG Charity. All rights reserved.</p>
+      </div>
+      <div class="footer-actions">
+        <a class="btn btn-primary" href="donate_page.html">♥ Donate</a>
+        <a class="btn btn-outline" href="contact_us_page.html">✉ Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

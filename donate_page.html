@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - HFG Charity</title>
+  <meta name="description" content="Support HFG Charity's work in Gaza with a one-off or monthly donation. Demo page — no real payment is processed.">
+  <link rel="icon" type="image/png" href="pictures/HFG_Logo_Part1.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/donate.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Hope for Gaza Charity — home">
+        <img src="pictures/HFG_Logo_Part1.png" alt="" width="40" height="40">
+        <span class="brand-text"><strong>Hope for Gaza</strong><small>Charity</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li class="has-submenu">
+            <a class="nav-link" href="our_work_page.html">Our Work</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle Our Work submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="community_development_page.html">Community Development</a></li>
+              <li><a href="educational_aid_page.html">Educational Aid</a></li>
+              <li><a href="medical_aid_page.html">Medical Aid</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="participate_page.html">Participate</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle Participate submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="participate_page.html">Participate</a></li>
+              <li><a href="participate_page.html#challenges">Challenges</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="about_us_page.html">About Us</a>
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle About Us submenu">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 4.5 7 9.5 12 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="updates_page.html">Updates</a></li>
+              <li><a href="contact_us_page.html">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="btn btn-primary nav-donate" href="donate_page.html" aria-current="page">Donate</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Donate</h1>
+        <p>Gaza, devastated by years of conflict, now lies in ruins. Yet within every child, every home, lies hope. Let's rebuild together — restoring not just buildings, but the dignity and spirit of Gaza's people.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <p class="eyebrow" style="max-width:44rem;">Demo only — no real payment is taken or transmitted anywhere.</p>
+
+      <div id="donateStep1">
+        <h2 style="margin-top:1rem;">1. Choose an amount</h2>
+        <div class="donation-frequency" role="group" aria-label="Donation frequency">
+          <button class="btn btn-outline is-selected" type="button" data-frequency="one-off">One-off</button>
+          <button class="btn btn-outline" type="button" data-frequency="monthly">Every Month</button>
+        </div>
+        <div class="donation-amount" role="group" aria-label="Donation amount">
+          <button class="btn btn-outline is-selected" type="button" data-amount="5">£5</button>
+          <button class="btn btn-outline" type="button" data-amount="10">£10</button>
+          <button class="btn btn-outline" type="button" data-amount="25">£25</button>
+          <button class="btn btn-outline" type="button" data-amount="other">Other</button>
+        </div>
+        <div class="donation-other">
+          <label for="customAmount" class="visually-hidden">Other amount in pounds</label>
+          <input type="number" id="customAmount" class="is-hidden" placeholder="Other amount (£)" min="1">
+        </div>
+        <button class="btn btn-primary" type="button" id="donateNext">Next</button>
+      </div>
+
+      <div class="form-panel is-hidden" id="donateStep2">
+        <div class="form-panel-header">
+          <h2 id="donationSummary">Donating £ to General Fund</h2>
+          <button class="btn btn-outline" type="button" id="donateChange">Change</button>
+        </div>
+        <form id="donateForm2" novalidate>
+          <div class="form-grid two-up">
+            <input type="text" id="donorFirstName" placeholder="First Name" autocomplete="given-name" required>
+            <input type="text" id="donorLastName" placeholder="Last Name" autocomplete="family-name" required>
+          </div>
+          <div class="form-grid" style="margin-top:0.75rem;">
+            <input type="tel" id="donorMobile" placeholder="Mobile number" autocomplete="tel" required>
+          </div>
+          <div class="form-grid" style="margin-top:0.75rem;">
+            <input type="email" id="donorEmail" placeholder="Email Address" autocomplete="email" required>
+          </div>
+          <h3 style="margin-top:1.5rem;">Payment details (demo)</h3>
+          <div class="form-grid" style="margin-top:0.75rem;">
+            <input type="text" inputmode="numeric" id="cardNumber" placeholder="Card Number" maxlength="19" autocomplete="cc-number" required>
+          </div>
+          <div class="form-grid two-up" style="margin-top:0.75rem;">
+            <input type="text" inputmode="numeric" id="cardExpiry" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp" required>
+            <input type="text" inputmode="numeric" id="cardCvc" placeholder="CVC" maxlength="3" autocomplete="cc-csc" required>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="success-panel is-hidden" id="donateSuccess">
+        <h2>Thank you!</h2>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="section newsletter container" id="stay-connected">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <h2>Stay Connected 🙌</h2>
+          <p>Join our mailing list to learn about the most important initiatives taking place in Palestine and how you can help.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <h3>Subscribe</h3>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nl-first">First name</label>
+              <input id="nl-first" name="firstName" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="nl-last">Last name</label>
+              <input id="nl-last" name="lastName" type="text" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="nl-email">Email</label>
+            <input id="nl-email" name="email" type="email" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="pictures/HFG_Logo_Part1.png" alt="" width="40" height="40">
+        <span>Hope for Gaza Charity</span>
+      </div>
+      <div>
+        <span class="demo-badge">This is a demo site</span>
+        <p class="footer-note">We don't sign you up for a mailing list or take any payment — feel free to try the forms.<br>© <span id="year"></span> HFG Charity. All rights reserved.</p>
+      </div>
+      <div class="footer-actions">
+        <a class="btn btn-primary" href="donate_page.html">♥ Donate</a>
+        <a class="btn btn-outline" href="contact_us_page.html">✉ Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
